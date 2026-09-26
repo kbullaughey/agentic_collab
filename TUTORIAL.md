@@ -200,7 +200,7 @@ move()
 
 There are two retrieval functions:
 
-- **`retrieve()`** (line 14) runs every step on the newly perceived events. It gets candidates by **keyword match** on subject/predicate/object (`kw_to_event`, `kw_to_thought`), then ranks them only by cosine similarity to the event, top 5 each. It doesn't use recency or importance.
+- **`retrieve()`** (line 14) runs every step on the newly perceived events. It gets candidates by **keyword match** on subject/predicate/object (`kw_to_event`, `kw_to_thought`), then ranks them only by cosine similarity to the event, top 5 each. It doesn't use recency or importance. Vectors come from the persona's cache (`a_mem.embeddings`, keyed by `embedding_key`) through `get_node_embedding`, so this step normally makes no API calls.
 - **`new_retrieve(persona, focal_points, n)`** (line 227) is the paper's scoring function, used for conversations, reflection, identity revision, and interviews. For every non-idle event or thought node:
 
   ```
@@ -788,7 +788,7 @@ These come from reading the code for this tutorial. Items marked **(verified)** 
 
 ### Performance and cost
 
-- `retrieve()` calls `get_embedding` for **every** keyword-matched memory on **every** step, even though vectors are cached in `a_mem.embeddings` under `embedding_key`. That's a large, avoidable API cost.
+- *(Fixed 2026-09-26.)* `retrieve()` used to call `get_embedding` for every keyword-matched memory on every step. It now reads the cached vectors (`get_node_embedding` in `retrieve.py`). In a 4-step, 3-agent test run, embedding calls fell from 157 to 30.
 - All agents are processed serially, with many sequential LLM calls per action. *Opportunity:* parallelize across agents within a step (careful: agents read each other's state).
 - Each checkpoint stage copies the whole sim folder, including every `movement/` and `environment/` file, so disk use grows quadratically with run length.
 

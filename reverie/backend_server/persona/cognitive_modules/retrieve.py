@@ -33,13 +33,13 @@ def retrieve(persona, perceived):
   for event in perceived:
     retrieved[event.description] = dict()
     retrieved[event.description]["curr_event"] = event
-    current_embedding = get_embedding(event.description)
+    current_embedding = get_node_embedding(persona, event)
 
     # Events
     relevant_events = persona.a_mem.retrieve_relevant_events(
       event.subject, event.predicate, event.object
     )
-    event_embeddings = {ev: get_embedding(ev.description) for ev in relevant_events}
+    event_embeddings = {ev: get_node_embedding(persona, ev) for ev in relevant_events}
     event_similarities = {
       ev: cos_sim(emb, current_embedding) for ev, emb in event_embeddings.items()
     }
@@ -53,7 +53,7 @@ def retrieve(persona, perceived):
       event.subject, event.predicate, event.object
     )
     thought_embeddings = {
-      thought: get_embedding(thought.description) for thought in relevant_thoughts
+      thought: get_node_embedding(persona, thought) for thought in relevant_thoughts
     }
     thought_similarities = {
       thought: cos_sim(emb, current_embedding)
@@ -68,7 +68,26 @@ def retrieve(persona, perceived):
   return retrieved
 
 
-def cos_sim(a, b): 
+def get_node_embedding(persona, node):
+  """
+  Returns the embedding of a memory node from the persona's embedding cache,
+  which is keyed by <node.embedding_key>. Every node is added to the cache
+  when it is created or loaded, so this normally makes no API call; the
+  fallback only covers a cache that is missing an entry.
+
+  INPUT:
+    persona: Current persona whose memory we are retrieving.
+    node: A <ConceptNode> from the persona's associative memory.
+  OUTPUT:
+    The embedding vector of node.embedding_key.
+  """
+  embeddings = persona.a_mem.embeddings
+  if node.embedding_key not in embeddings:
+    embeddings[node.embedding_key] = get_embedding(node.embedding_key)
+  return embeddings[node.embedding_key]
+
+
+def cos_sim(a, b):
   """
   This function calculates the cosine similarity between two input vectors 
   'a' and 'b'. Cosine similarity is a measure of similarity between two 

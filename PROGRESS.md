@@ -40,3 +40,13 @@
 - Fix the two config bugs above (small).
 - Add an `interview.py` CLI (questions file → CSV across checkpoints, no side effects).
 - Cache embeddings in `retrieve()`; parameterize map paths by `maze_name`.
+
+## 2026-09-26 — Embedding cache in `retrieve()`
+
+### Done
+- `persona/cognitive_modules/retrieve.py`: `retrieve()` now gets vectors from `a_mem.embeddings` through the new `get_node_embedding(persona, node)`. It falls back to one API call (and caches the result) if a key is missing. It previously called `get_embedding(node.description)` for the perceived event and every keyword-matched candidate on every step.
+- Behavior change: similarity now compares `embedding_key` vectors (e.g. "serving coffee") rather than full event descriptions ("Isabella Rodriguez is serving coffee"). This matches how `new_retrieve` already scores relevance. Thoughts are unaffected (their key equals their description).
+
+### Verified
+- Offline, with `get_embedding` stubbed to count calls, on 4 agents from `skip-morning-s-14` with 8 perceived events each: 0 API calls, vs. 513 under the old code (256 for Isabella alone, who has 126 memories).
+- `./run_backend_automatic.sh -o base_the_ville_isabella_maria_klaus -t embcache_test -s 4 --ui None`: no errors or fail-safes, sensible actions. Embedding calls fell from 157 to 30 and chat calls held at 41, vs. the earlier identical run. Test sim folders deleted afterwards.
