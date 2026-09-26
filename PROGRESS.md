@@ -20,3 +20,23 @@
 - Dropping `stop` for reasoning models may change outputs of legacy prompts that relied on it for truncation; none failed in the short runs.
 - `django-storages-redux` emits a deprecation warning; Django is held < 4.0 because `urls.py` uses `django.conf.urls.url`. Upgrading to Django 4.2 + `re_path` would be a small follow-up.
 - `nlp/openai_convo_summary.py` still hardcodes a placeholder API key.
+
+## 2026-09-26 — TUTORIAL.md
+
+### Done
+- Wrote `TUTORIAL.md`: architecture, step loop, cognitive modules, memory formats, map/blocks/remaps, LLM/prompt layer, input vs. output files, run modes, interviews, customization recipes, bundled scenarios, and a limitations list.
+
+### Findings (from code reading; see TUTORIAL.md §16)
+- `"block_remaps": {}` crashes `Maze` with `KeyError: 'sector'` (verified). `base_search_and_rescue/reverie/meta.json` has this. Fix: `.get(..., {})` in `maze.py` or use `null`.
+- `commander_op` Commander Cody `scratch.json` uses `congnative`/`embodied`; the code reads `noncognitive`/`nonembodied`, so the flags are ignored.
+- Live UI handshake looks broken: `home/main_script.html` sends positions as a GET body to `get_movements` and POSTs `{step, sim_code}` without `environment` to `send_environment`. The endpoints look swapped vs. upstream. Not browser-tested.
+- MQTT topic mismatch: Django publishes `reverie/<sim>/environment`, gateway listens on `frontend/environment`.
+- `extract_recency` gives the oldest node the highest recency (inherited from upstream).
+- `retrieve()` calls `get_embedding` for every candidate memory each step despite the `a_mem.embeddings` cache.
+- `maze_name` is effectively ignored (`utils.env_matrix` hard-codes `the_ville`). Several scratch knobs are loaded but unused. Memory `expiration` is never enforced. `daily_req` isn't regenerated after day 1. The plugin runner is commented out.
+- Interviews: `call -- analysis <Name>` (answer is visible only in the debug dump) and `open_convo_session("analysis", direct=True, question=...)` (used by `survey.ipynb`).
+
+### Recommendations
+- Fix the two config bugs above (small).
+- Add an `interview.py` CLI (questions file → CSV across checkpoints, no side effects).
+- Cache embeddings in `retrieve()`; parameterize map paths by `maze_name`.
