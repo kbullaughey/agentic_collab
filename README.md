@@ -18,37 +18,38 @@ _______________________________________
 
 ## Setting Up The Environment
 
-### Step 1. Conda Env
+### Step 1. Python Environment (uv)
 
-Note: If you change the environment name from `simulacra`, you'll need to update the name in the upcoming bash scripts as well.
+Dependencies are managed with [uv](https://docs.astral.sh/uv/) via `pyproject.toml` (Python 3.11, pinned in `.python-version`; uv downloads it if needed).
 ```bash
-    conda create -n simulacra python=3.9.12 pip
-    conda activate simulacra
-    pip install -r requirements.txt
+    uv sync                      # creates .venv and installs runtime + dev deps
+    uv sync --group analysis     # optional: notebooks / NLP / plotting deps for utils/ and nlp/
 ```
+The run scripts below use `uv run`, so you don't need to activate the venv. To use it directly: `source .venv/bin/activate`.
 
 
-### Step 2. OpenAI Config
+### Step 2. API Key (.env)
 
-Create a file called `openai_config.json` in the root directory.
+Create a `.env` file in the repository root (it is gitignored):
+```bash
+OPENAI_API_KEY=sk-...
+```
+`reverie/backend_server/utils.py` loads it with `python-dotenv`. Variables already set in your shell take precedence. For Azure, set `AZURE_OPENAI_API_KEY` instead.
+
+
+### Step 3. LLM Config (optional)
+
+The defaults live in `DEFAULT_OPENAI_CONFIG` in [`reverie/backend_server/utils.py`](reverie/backend_server/utils.py): `gpt-6-luna` for generation, `text-embedding-3-small` for embeddings, and a $10 cost upper bound. To override any of them, create `openai_config.json` in the root directory (gitignored). Only include the keys you want to change, and **don't put API keys in it**. `model-key` and `embeddings-key` are read from the environment when omitted.
 
 OpenAI example:
 ```json
 {
-    "client": "openai", 
-    "model": "gpt-4o-mini",
-    "model-key": "<API-KEY>",
+    "model": "gpt-6-luna",
     "model-costs": {
-        "input":  0.5,
-        "output": 1.5
+        "input":  0.10,
+        "output": 0.50
     },
-    "embeddings-client": "openai",
-    "embeddings": "text-embedding-3-small",
-    "embeddings-key": "<API-KEY>",
-    "embeddings-costs": {
-        "input": 0.02,
-        "output": 0.0
-    },
+    "reasoning-effort": "low",
     "experiment-name": "simulacra-test",
     "cost-upperbound": 10
 }
@@ -57,57 +58,33 @@ OpenAI example:
 Azure example:
 ```json
 {
-    "client": "azure", 
+    "client": "azure",
     "model": "gpt-4o-mini",
-    "model-key": "<API-KEY>",
     "model-endpoint": "<MODEL-ENDPOINT>",
     "model-api-version": "<API-VERSION>",
-    "model-costs": {
-        "input":  0.5,
-        "output": 1.5
-    },
+    "legacy-sampling-params": true,
     "embeddings-client": "azure",
     "embeddings": "text-embedding-3-small",
-    "embeddings-key": "<API-KEY>",
     "embeddings-endpoint": "<EMBEDDING-MODEL-ENDPOINT>",
-    "embeddings-api-version": "<API-VERSION>",
-    "embeddings-costs": {
-        "input": 0.02,
-        "output": 0.0
-    },
-    "experiment-name": "simulacra-test",
-    "cost-upperbound": 10
+    "embeddings-api-version": "<API-VERSION>"
 }
 ```
 
-Feel free to change and test also other models (and change accordingly the input and output costs). Note that this repo uses OpenAI's Structured Outputs feature, which is currently only available for certain models, like the GPT-4o series. Check the OpenAI docs for more info. \
-The generation and the embedding models are configured separately to be able to use different clients.\
-Change also the `cost-upperbound` according to your needs (the cost computation is done using "[openai-cost-logger](https://github.com/drudilorenzo/openai-cost-logger)" and the costs are specified per million tokens).
-
-Next, you will (for now) also need to set up the `utils.py` file as described in the [original repo's README](README_origin.md). After creating the file as described there, add these lines to it and change them as necessary:
-
-```
-use_openai = True
-# If you're not using OpenAI, define api_model
-api_model = ""
-```
+Notes:
+- Costs are USD per million tokens and are used by "[openai-cost-logger](https://github.com/drudilorenzo/openai-cost-logger)" to enforce `cost-upperbound`.
+- This repo uses OpenAI's Structured Outputs feature, so the model must support it.
+- Reasoning models (gpt-5.x / gpt-6.x) reject `max_tokens`, non-default `temperature`, and `stop`. With `"legacy-sampling-params": false` (the default), those are dropped from requests. Set it to `true` for older models such as `gpt-4o-mini`.
+- `reasoning-effort` is passed through when set. `gpt-6-luna` accepts `"none"`, `"low"`, `"medium"`, `"high"`, and `"xhigh"`. It is ignored in legacy mode.
 
 ## Running a simulation
 
-> All of the following scripts accept two optional arguments to customize the conda setup:
-> - `--conda_path`: Path to your conda activate script (default: `/home/${USER}/anaconda3/bin/activate`)
-> - `--env_name`: Name of the conda environment to use (default: `simulacra`)
->
-> Example with custom conda setup:
-> ```bash
-> ./run_frontend.sh --conda_path /path/to/conda/activate --env_name my_env [other args...]
-> ```
+> All of the following scripts run Python through `uv run`, using the project's `.venv`.
 
 ### Step 1. Starting the Environment Server
 If you're running the backend in headless mode (see below), you can skip this step.
 
 ```bash
-    ./run_frontend.sh [--conda_path PATH] [--env_name ENV] [PORT-NUMBER]
+    ./run_frontend.sh [PORT-NUMBER]
 ```
  >Note: omit the port number to use the default 8000.
 
@@ -115,7 +92,7 @@ If you're running the backend in headless mode (see below), you can skip this st
 
 #### Option 1: Running the server manually
 ```bash
-    ./run_backend.sh [--conda_path PATH] [--env_name ENV] <ORIGIN> <TARGET>
+    ./run_backend.sh <ORIGIN> <TARGET>
 ```
 Example:
 ```bash
@@ -134,12 +111,10 @@ The following script offer a range of enhanced features:
 
 For more details, refer to: [run_backend_automatic.sh](run_backend_automatic.sh) and [automatic_execution.py](reverie/backend_server/automatic_execution.py).
 ```bash
-    ./run_backend_automatic.sh [--conda_path <PATH>] [--env_name <ENV>] -o <ORIGIN> -t <TARGET> -s <STEP> --ui <True|None|False> -p <PORT> --browser_path <BROWSER-PATH> [--load_history <HISTORY-FILE>]
+    ./run_backend_automatic.sh -o <ORIGIN> -t <TARGET> -s <STEP> --ui <True|None|False> -p <PORT> --browser_path <BROWSER-PATH> [--load_history <HISTORY-FILE>]
 ```
 
 Arguments taken by `run_backend_automatic.sh`:
-- `--conda_path`: (Optional) Path to your conda activate script
-- `--env_name`: (Optional) Name of the conda environment to use
 - `-o <ORIGIN>`: The name of an existing simulation to use as the base for the new simulation.
 - `-t <TARGET>`: The new simulation name (Note: you cannot have multiple simulations of the same name).
 - `-s <STEP>`: The step number to end on (NOT necessarily the number of steps to run for!).

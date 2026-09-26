@@ -5,18 +5,12 @@ File: gpt_structure.py
 Description: Wrapper functions for calling OpenAI APIs.
 """
 
-import json
-from pathlib import Path
 import time
 import traceback
 from openai import AzureOpenAI, OpenAI
-from utils import openai_api_key, use_openai, api_model
+from utils import openai_api_key, use_openai, api_model, openai_config
 from openai_cost_logger import DEFAULT_LOG_PATH
 from persona.prompt_template.openai_logger_singleton import OpenAICostLogger_Singleton
-
-config_path = Path("../../openai_config.json")
-with open(config_path, "r") as f:
-  openai_config = json.load(f) 
 
 client = OpenAI(api_key=openai_api_key)
 
@@ -113,6 +107,13 @@ cost_logger = OpenAICostLogger_Singleton(
 )
 
 
+def reasoning_kwargs():
+  """Optional `reasoning_effort` for reasoning models, from openai_config."""
+  if openai_config["legacy-sampling-params"] or not openai_config["reasoning-effort"]:
+    return {}
+  return {"reasoning_effort": openai_config["reasoning-effort"]}
+
+
 def temp_sleep(seconds=0.1):
   time.sleep(seconds)
 
@@ -126,6 +127,7 @@ def ChatGPT_single_request(prompt):
   completion = client.chat.completions.create(
     model=openai_config["model"],
     messages=[{"role": "user", "content": prompt}],
+    **reasoning_kwargs(),
   )
 
   content = completion.choices[0].message.content
@@ -175,7 +177,8 @@ def ChatGPT_request(prompt):
   try: 
     completion = client.chat.completions.create(
       model=openai_config["model"],
-      messages=[{"role": "user", "content": prompt}]
+      messages=[{"role": "user", "content": prompt}],
+      **reasoning_kwargs(),
     )
     content = completion.choices[0].message.content
     print("Response content:", content, flush=True)
@@ -211,7 +214,8 @@ def ChatGPT_structured_request(prompt, response_format):
     completion = client.beta.chat.completions.parse(
       model=openai_config["model"],
       response_format=response_format,
-      messages=[{"role": "user", "content": prompt}]
+      messages=[{"role": "user", "content": prompt}],
+      **reasoning_kwargs(),
     )
 
     print("Response:", completion, flush=True)
@@ -381,6 +385,36 @@ def ChatGPT_safe_generate_structured_response(
 # ============================================================================
 # ###################[SECTION 2: ORIGINAL GPT-3 STRUCTURE] ###################
 # ============================================================================
+def sampling_kwargs(gpt_parameter):
+  """
+  Translate a legacy gpt_parameter dict into keyword arguments accepted by the
+  configured model. Reasoning models (gpt-5.x, gpt-6.x) reject `max_tokens`,
+  non-default `temperature`, and `stop`, and count hidden reasoning tokens
+  against `max_completion_tokens`, so those limits are dropped for them.
+  """
+  kwargs = {
+    "top_p": gpt_parameter["top_p"],
+    "frequency_penalty": gpt_parameter["frequency_penalty"],
+    "presence_penalty": gpt_parameter["presence_penalty"],
+  }
+  if openai_config["legacy-sampling-params"]:
+    kwargs.update(
+      temperature=gpt_parameter["temperature"],
+      max_tokens=gpt_parameter["max_tokens"],
+      stop=gpt_parameter["stop"],
+    )
+  kwargs.update(reasoning_kwargs())
+  return kwargs
+
+
+def log_cost(response):
+  cost_logger.update_cost(
+    response,
+    input_cost=openai_config["model-costs"]["input"],
+    output_cost=openai_config["model-costs"]["output"],
+  )
+
+
 def GPT_request(prompt, gpt_parameter):
   """
   Given a prompt and a dictionary of GPT parameters, make a request to OpenAI
@@ -403,18 +437,14 @@ def GPT_request(prompt, gpt_parameter):
       response = client.chat.completions.create(
                   model=gpt_parameter["engine"],
                   messages=messages,
-                  temperature=gpt_parameter["temperature"],
-                  max_tokens=gpt_parameter["max_tokens"],
-                  top_p=gpt_parameter["top_p"],
-                  frequency_penalty=gpt_parameter["frequency_penalty"],
-                  presence_penalty=gpt_parameter["presence_penalty"],
                   stream=gpt_parameter["stream"],
-                  stop=gpt_parameter["stop"],
+                  **sampling_kwargs(gpt_parameter),
               )
     else:
       response = client.completions.create(model=model, prompt=prompt)
 
     print("Response: ", response, flush=True)
+    log_cost(response)
     content = response.choices[0].message.content
     return content
 
@@ -448,18 +478,13 @@ def GPT_structured_request(prompt, gpt_parameter, response_format):
         model=gpt_parameter["engine"],
         messages=messages,
         response_format=response_format,
-        temperature=gpt_parameter["temperature"],
-        max_tokens=gpt_parameter["max_tokens"],
-        top_p=gpt_parameter["top_p"],
-        frequency_penalty=gpt_parameter["frequency_penalty"],
-        presence_penalty=gpt_parameter["presence_penalty"],
-        # stream=gpt_parameter["stream"],
-        stop=gpt_parameter["stop"],
+        **sampling_kwargs(gpt_parameter),
       )
     else:
       response = client.completions.create(model=model, prompt=prompt)
 
     print("Response: ", response, flush=True)
+    log_cost(response)
     message = response.choices[0].message
 
     if message.parsed:
