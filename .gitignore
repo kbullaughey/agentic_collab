@@ -1,6 +1,5 @@
-# OpenAI API key
+# Secrets and local LLM config overrides (API keys live in .env)
 openai_config.json
-reverie/backend_server/utils.py
 environment/frontend_server/temp_storage/curr_sim_code.json
 
 environment/frontend_server/storage/*
@@ -108,7 +107,7 @@ target/
 .ipynb_checkpoints
 
 # pyenv
-.python-version
+# .python-version is committed: it pins uv to Python 3.11
 
 # celery beat schedule file
 celerybeat-schedule
@@ -127,3 +126,4 @@ ENV/
 .ropeproject
 
 .history/
+.env

@@ -5,7 +5,7 @@ File: gpt_structure.py
 Description: Wrapper functions for calling OpenAI APIs.
 """
 from openai import OpenAI
-from utils import openai_api_key
+from utils import openai_api_key, openai_config
 
 client = OpenAI(api_key=openai_api_key)
 
@@ -23,7 +23,7 @@ def ChatGPT_request(prompt):
   """
   # temp_sleep()
   try: 
-    completion = client.chat.completions.create(model="gpt-4o-mini", 
+    completion = client.chat.completions.create(model=openai_config["model"], 
     messages=[{"role": "user", "content": prompt}])
     return completion.choices[0].message.content
   
