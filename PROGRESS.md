@@ -50,3 +50,37 @@
 ### Verified
 - Offline, with `get_embedding` stubbed to count calls, on 4 agents from `skip-morning-s-14` with 8 perceived events each: 0 API calls, vs. 513 under the old code (256 for Isabella alone, who has 126 memories).
 - `./run_backend_automatic.sh -o base_the_ville_isabella_maria_klaus -t embcache_test -s 4 --ui None`: no errors or fail-safes, sensible actions. Embedding calls fell from 157 to 30 and chat calls held at 41, vs. the earlier identical run. Test sim folders deleted afterwards.
+
+## 2026-09-26 — Reels (REELS.md) implementation
+
+### Done
+- New `reels/` package with a staged CLI, `reels/reel.py`. Subcommands: `extract`, `beats`, `show-context`, `monologue`, `timeline`, `validate`, `report`, `serve`, `tts`, `render`. Usage and file formats are in `reels/README.md`.
+- Answers to the open questions in REELS.md:
+  - **Input:** use uncompressed history. Its per-step `curr_time` is the only accurate clock, and the clock jumps (e.g. 05:59:10 → 06:00:00 at step 2156). Compressed sims are supported with a linear-clock warning.
+  - **Data structure:** staged JSON files: `extract.json` → `beats.json` → (`audio/manifest.json`) → `timeline.json`. Each is hash-linked to its inputs.
+- **Viewer:** a static Phaser page in `reels/viewer/`. It renders deterministically from reel time and exposes `window.reel.seek(t)`. The camera re-centres at the edges and is clamped to the map. A chat panel types each line word by word, with avatar and initials, and monologues appear in a "thinking" style.
+- **Render:** Playwright captures frames and pipes them to ffmpeg (libx264), then the TTS clips are mixed in with `adelay`/`amix`.
+- **TTS:** Inworld (`POST /tts/v1/voice`). It requests `timestampType: WORD`; if no timestamps come back it falls back to Whisper, and aligns the words with difflib. Clips are cached by (text, voice, model, rate).
+- Added dev deps `pyyaml`, `pytest` and `playwright`. `reels/out/` is gitignored.
+
+### Verified
+- `uv run pytest reels/tests`: 15 pass. Fixture: `reels/tests/fixtures/mini_sim`, 3 personas, sliced from skip-morning-s-14 (344K).
+- `reels/configs/sam_morning.yaml` (Sam Moore: breakfast chat, walk home, meeting Ayesha in the park): extract → beats → monologue → timeline → validate gives 0 errors, 0 warnings.
+  - The reel is 426 s at the fixed 750 chars/min rate.
+  - The 8 monologues cost $0.0012 with gpt-6-luna.
+- Viewer screenshots via headless Chromium show no page errors, camera pans at the edges, and chat lines typing.
+- Rendered the `walk-home` segment (15 fps): mp4 length matches the timeline within one frame.
+- Audio mux checked with synthetic clips: detected silence gaps line up exactly with the timeline speech times.
+
+### Not yet done / findings
+- **No real Inworld call yet.** `INWORLD_API_KEY` isn't set in this repo's `.env`, so these are unverified:
+  - the voice ids in the config (Dennis, Sarah, Ashley);
+  - whether Inworld returns `timestampInfo.wordAlignment` for `inworld-tts-2`.
+  Next step: add the key, run `reel.py tts <cfg> --beat b01`, then `timeline` and `render --segment breakfast-chat`.
+- Capture runs at about 9–10 frames/s, so a full 7-minute reel at 30 fps takes ~20 min. Use `--fps 15` or `--segment` while iterating.
+- **Sim data quirks that show up in reels:**
+  - skip-morning personas move little: Sam's longest walks are about 20–30 steps.
+  - Some sub-activities are the conversation text itself.
+  - Some reflection nodes are "this is blank"; the extractor filters these out.
+  - A conversation already underway at a segment's start is cut off. Only the focal persona's conversations become beats; others are only visible as 💬.
+- Conversations in the sim are generated all at once. The reel spreads the lines over the conversation's steps; it doesn't re-time them against the per-step sim state.

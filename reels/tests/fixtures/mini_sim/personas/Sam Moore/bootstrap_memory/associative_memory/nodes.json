@@ -1,0 +1,2677 @@
+{
+ "node_137": {
+  "node_count": 137,
+  "type_count": 133,
+  "type": "event",
+  "depth": 0,
+  "created": "2023-02-13 06:05:00",
+  "expiration": null,
+  "subject": "the Ville:Moore family's house:main room:closet",
+  "predicate": "is",
+  "object": "idle",
+  "description": "closet is idle",
+  "embedding_key": "closet is idle",
+  "poignancy": 1,
+  "keywords": [
+   "closet",
+   "idle"
+  ],
+  "filling": []
+ },
+ "node_136": {
+  "node_count": 136,
+  "type_count": 132,
+  "type": "event",
+  "depth": 0,
+  "created": "2023-02-13 06:04:50",
+  "expiration": null,
+  "subject": "Jennifer Moore",
+  "predicate": "check",
+  "object": "emails",
+  "description": "Jennifer Moore is checking her emails",
+  "embedding_key": "checking her emails",
+  "poignancy": 3,
+  "keywords": [
+   "Jennifer Moore",
+   "emails"
+  ],
+  "filling": []
+ },
+ "node_135": {
+  "node_count": 135,
+  "type_count": 131,
+  "type": "event",
+  "depth": 0,
+  "created": "2023-02-13 06:04:40",
+  "expiration": null,
+  "subject": "the Ville:Moore family's house:main room:common room sofa",
+  "predicate": "is",
+  "object": "idle",
+  "description": "common room sofa is idle",
+  "embedding_key": "common room sofa is idle",
+  "poignancy": 1,
+  "keywords": [
+   "common room sofa",
+   "idle"
+  ],
+  "filling": []
+ },
+ "node_134": {
+  "node_count": 134,
+  "type_count": 130,
+  "type": "event",
+  "depth": 0,
+  "created": "2023-02-13 06:04:40",
+  "expiration": null,
+  "subject": "the Ville:Moore family's house:main room:kitchen sink",
+  "predicate": "is",
+  "object": "idle",
+  "description": "kitchen sink is idle",
+  "embedding_key": "kitchen sink is idle",
+  "poignancy": 1,
+  "keywords": [
+   "kitchen sink",
+   "idle"
+  ],
+  "filling": []
+ },
+ "node_133": {
+  "node_count": 133,
+  "type_count": 129,
+  "type": "event",
+  "depth": 0,
+  "created": "2023-02-13 06:04:40",
+  "expiration": null,
+  "subject": "the Ville:Moore family's house:main room:desk",
+  "predicate": "use",
+  "object": "Jennifer Moore",
+  "description": "desk is being used by Jennifer Moore for checking her emails",
+  "embedding_key": "desk is being used by Jennifer Moore for checking her emails",
+  "poignancy": 3,
+  "keywords": [
+   "desk",
+   "Jennifer Moore"
+  ],
+  "filling": []
+ },
+ "node_132": {
+  "node_count": 132,
+  "type_count": 128,
+  "type": "event",
+  "depth": 0,
+  "created": "2023-02-13 06:04:40",
+  "expiration": null,
+  "subject": "the Ville:Moore family's house:main room:closet",
+  "predicate": "open",
+  "object": "retrieve",
+  "description": "closet is being opened to retrieve walking shoes and jacket for Sam Moore",
+  "embedding_key": "closet is being opened to retrieve walking shoes and jacket for Sam Moore",
+  "poignancy": 2,
+  "keywords": [
+   "closet",
+   "retrieve"
+  ],
+  "filling": []
+ },
+ "node_131": {
+  "node_count": 131,
+  "type_count": 127,
+  "type": "event",
+  "depth": 0,
+  "created": "2023-02-13 06:04:40",
+  "expiration": null,
+  "subject": "Sam Moore",
+  "predicate": "put on",
+  "object": "walking shoes and jacket",
+  "description": "Sam Moore is putting on his walking shoes and jacket",
+  "embedding_key": "putting on his walking shoes and jacket",
+  "poignancy": 3,
+  "keywords": [
+   "Sam Moore",
+   "walking shoes and jacket"
+  ],
+  "filling": []
+ },
+ "node_130": {
+  "node_count": 130,
+  "type_count": 126,
+  "type": "event",
+  "depth": 0,
+  "created": "2023-02-13 06:04:30",
+  "expiration": null,
+  "subject": "the Ville:Moore family's house:main room:cooking area",
+  "predicate": "is",
+  "object": "idle",
+  "description": "cooking area is idle",
+  "embedding_key": "cooking area is idle",
+  "poignancy": 1,
+  "keywords": [
+   "cooking area",
+   "idle"
+  ],
+  "filling": []
+ },
+ "node_129": {
+  "node_count": 129,
+  "type_count": 125,
+  "type": "event",
+  "depth": 0,
+  "created": "2023-02-13 06:04:20",
+  "expiration": null,
+  "subject": "the Ville:Moore family's house:main room:bed",
+  "predicate": "is",
+  "object": "idle",
+  "description": "bed is idle",
+  "embedding_key": "bed is idle",
+  "poignancy": 1,
+  "keywords": [
+   "idle",
+   "bed"
+  ],
+  "filling": []
+ },
+ "node_128": {
+  "node_count": 128,
+  "type_count": 124,
+  "type": "event",
+  "depth": 0,
+  "created": "2023-02-13 06:04:20",
+  "expiration": null,
+  "subject": "the Ville:Moore family's house:main room:closet",
+  "predicate": "is",
+  "object": "idle",
+  "description": "closet is idle",
+  "embedding_key": "closet is idle",
+  "poignancy": 1,
+  "keywords": [
+   "closet",
+   "idle"
+  ],
+  "filling": []
+ },
+ "node_127": {
+  "node_count": 127,
+  "type_count": 123,
+  "type": "event",
+  "depth": 0,
+  "created": "2023-02-13 06:04:10",
+  "expiration": null,
+  "subject": "the Ville:Moore family's house:main room:refrigerator",
+  "predicate": "is",
+  "object": "idle",
+  "description": "refrigerator is idle",
+  "embedding_key": "refrigerator is idle",
+  "poignancy": 1,
+  "keywords": [
+   "refrigerator",
+   "idle"
+  ],
+  "filling": []
+ },
+ "node_126": {
+  "node_count": 126,
+  "type_count": 122,
+  "type": "event",
+  "depth": 0,
+  "created": "2023-02-13 06:04:10",
+  "expiration": null,
+  "subject": "the Ville:Moore family's house:main room:common room sofa",
+  "predicate": "is",
+  "object": "idle",
+  "description": "common room sofa is idle",
+  "embedding_key": "common room sofa is idle",
+  "poignancy": 1,
+  "keywords": [
+   "common room sofa",
+   "idle"
+  ],
+  "filling": []
+ },
+ "node_125": {
+  "node_count": 125,
+  "type_count": 121,
+  "type": "event",
+  "depth": 0,
+  "created": "2023-02-13 06:04:10",
+  "expiration": null,
+  "subject": "Jennifer Moore",
+  "predicate": "check",
+  "object": "emails",
+  "description": "Jennifer Moore is checking her emails",
+  "embedding_key": "checking her emails",
+  "poignancy": 3,
+  "keywords": [
+   "Jennifer Moore",
+   "emails"
+  ],
+  "filling": []
+ },
+ "node_124": {
+  "node_count": 124,
+  "type_count": 120,
+  "type": "event",
+  "depth": 0,
+  "created": "2023-02-13 06:04:10",
+  "expiration": null,
+  "subject": "the Ville:Moore family's house:main room:desk",
+  "predicate": "use",
+  "object": "Jennifer Moore",
+  "description": "desk is being used by Jennifer Moore for checking her emails",
+  "embedding_key": "desk is being used by Jennifer Moore for checking her emails",
+  "poignancy": 3,
+  "keywords": [
+   "desk",
+   "Jennifer Moore"
+  ],
+  "filling": []
+ },
+ "node_123": {
+  "node_count": 123,
+  "type_count": 119,
+  "type": "event",
+  "depth": 0,
+  "created": "2023-02-13 06:04:10",
+  "expiration": null,
+  "subject": "the Ville:Moore family's house:main room:kitchen sink",
+  "predicate": "is",
+  "object": "idle",
+  "description": "kitchen sink is idle",
+  "embedding_key": "kitchen sink is idle",
+  "poignancy": 1,
+  "keywords": [
+   "kitchen sink",
+   "idle"
+  ],
+  "filling": []
+ },
+ "node_122": {
+  "node_count": 122,
+  "type_count": 118,
+  "type": "event",
+  "depth": 0,
+  "created": "2023-02-13 06:04:10",
+  "expiration": null,
+  "subject": "Sam Moore",
+  "predicate": "put on",
+  "object": "walking shoes and jacket",
+  "description": "Sam Moore is putting on his walking shoes and jacket",
+  "embedding_key": "putting on his walking shoes and jacket",
+  "poignancy": 2,
+  "keywords": [
+   "Sam Moore",
+   "walking shoes and jacket"
+  ],
+  "filling": []
+ },
+ "node_121": {
+  "node_count": 121,
+  "type_count": 117,
+  "type": "event",
+  "depth": 0,
+  "created": "2023-02-13 05:54:50",
+  "expiration": null,
+  "subject": "the Ville:Moore family's house:main room:cooking area",
+  "predicate": "is",
+  "object": "idle",
+  "description": "cooking area is idle",
+  "embedding_key": "cooking area is idle",
+  "poignancy": 1,
+  "keywords": [
+   "cooking area",
+   "idle"
+  ],
+  "filling": []
+ },
+ "node_120": {
+  "node_count": 120,
+  "type_count": 116,
+  "type": "event",
+  "depth": 0,
+  "created": "2023-02-13 05:54:50",
+  "expiration": null,
+  "subject": "the Ville:Moore family's house:main room:kitchen sink",
+  "predicate": "fill",
+  "object": "dirty dishes",
+  "description": "kitchen sink is being filled with dirty dishes",
+  "embedding_key": "kitchen sink is being filled with dirty dishes",
+  "poignancy": 2,
+  "keywords": [
+   "kitchen sink",
+   "dirty dishes"
+  ],
+  "filling": []
+ },
+ "node_119": {
+  "node_count": 119,
+  "type_count": 115,
+  "type": "event",
+  "depth": 0,
+  "created": "2023-02-13 05:54:40",
+  "expiration": null,
+  "subject": "the Ville:Moore family's house:main room:closet",
+  "predicate": "is",
+  "object": "idle",
+  "description": "closet is idle",
+  "embedding_key": "closet is idle",
+  "poignancy": 1,
+  "keywords": [
+   "closet",
+   "idle"
+  ],
+  "filling": []
+ },
+ "node_118": {
+  "node_count": 118,
+  "type_count": 114,
+  "type": "event",
+  "depth": 0,
+  "created": "2023-02-13 05:54:40",
+  "expiration": null,
+  "subject": "the Ville:Moore family's house:main room:refrigerator",
+  "predicate": "is",
+  "object": "idle",
+  "description": "refrigerator is idle",
+  "embedding_key": "refrigerator is idle",
+  "poignancy": 1,
+  "keywords": [
+   "refrigerator",
+   "idle"
+  ],
+  "filling": []
+ },
+ "node_117": {
+  "node_count": 117,
+  "type_count": 113,
+  "type": "event",
+  "depth": 0,
+  "created": "2023-02-13 05:54:40",
+  "expiration": null,
+  "subject": "the Ville:Moore family's house:main room:common room sofa",
+  "predicate": "is",
+  "object": "idle",
+  "description": "common room sofa is idle",
+  "embedding_key": "common room sofa is idle",
+  "poignancy": 1,
+  "keywords": [
+   "common room sofa",
+   "idle"
+  ],
+  "filling": []
+ },
+ "node_116": {
+  "node_count": 116,
+  "type_count": 112,
+  "type": "event",
+  "depth": 0,
+  "created": "2023-02-13 05:54:40",
+  "expiration": null,
+  "subject": "Jennifer Moore",
+  "predicate": "check",
+  "object": "emails",
+  "description": "Jennifer Moore is checking her emails",
+  "embedding_key": "checking her emails",
+  "poignancy": 3,
+  "keywords": [
+   "Jennifer Moore",
+   "emails"
+  ],
+  "filling": []
+ },
+ "node_115": {
+  "node_count": 115,
+  "type_count": 111,
+  "type": "event",
+  "depth": 0,
+  "created": "2023-02-13 05:54:40",
+  "expiration": null,
+  "subject": "Sam Moore",
+  "predicate": "eat",
+  "object": "breakfast",
+  "description": "Sam Moore is eating breakfast",
+  "embedding_key": "eating breakfast",
+  "poignancy": 3,
+  "keywords": [
+   "breakfast",
+   "Sam Moore"
+  ],
+  "filling": []
+ },
+ "node_114": {
+  "node_count": 114,
+  "type_count": 110,
+  "type": "event",
+  "depth": 0,
+  "created": "2023-02-13 05:54:30",
+  "expiration": null,
+  "subject": "the Ville:Moore family's house:main room:desk",
+  "predicate": "use",
+  "object": "Jennifer Moore",
+  "description": "desk is being used by Jennifer Moore for checking her emails",
+  "embedding_key": "desk is being used by Jennifer Moore for checking her emails",
+  "poignancy": 3,
+  "keywords": [
+   "desk",
+   "Jennifer Moore"
+  ],
+  "filling": []
+ },
+ "node_113": {
+  "node_count": 113,
+  "type_count": 109,
+  "type": "event",
+  "depth": 0,
+  "created": "2023-02-13 05:54:20",
+  "expiration": null,
+  "subject": "the Ville:Moore family's house:main room:desk",
+  "predicate": "is",
+  "object": "idle",
+  "description": "desk is idle",
+  "embedding_key": "desk is idle",
+  "poignancy": 1,
+  "keywords": [
+   "desk",
+   "idle"
+  ],
+  "filling": []
+ },
+ "node_112": {
+  "node_count": 112,
+  "type_count": 108,
+  "type": "event",
+  "depth": 0,
+  "created": "2023-02-13 05:54:20",
+  "expiration": null,
+  "subject": "the Ville:Moore family's house:main room:cooking area",
+  "predicate": "is",
+  "object": "idle",
+  "description": "cooking area is idle",
+  "embedding_key": "cooking area is idle",
+  "poignancy": 1,
+  "keywords": [
+   "cooking area",
+   "idle"
+  ],
+  "filling": []
+ },
+ "node_111": {
+  "node_count": 111,
+  "type_count": 107,
+  "type": "event",
+  "depth": 0,
+  "created": "2023-02-13 05:54:20",
+  "expiration": null,
+  "subject": "the Ville:Moore family's house:main room:kitchen sink",
+  "predicate": "fill",
+  "object": "dirty dishes",
+  "description": "kitchen sink is being filled with dirty dishes",
+  "embedding_key": "kitchen sink is being filled with dirty dishes",
+  "poignancy": 2,
+  "keywords": [
+   "kitchen sink",
+   "dirty dishes"
+  ],
+  "filling": []
+ },
+ "node_110": {
+  "node_count": 110,
+  "type_count": 106,
+  "type": "event",
+  "depth": 0,
+  "created": "2023-02-13 05:54:10",
+  "expiration": null,
+  "subject": "the Ville:Moore family's house:main room:closet",
+  "predicate": "is",
+  "object": "idle",
+  "description": "closet is idle",
+  "embedding_key": "closet is idle",
+  "poignancy": 1,
+  "keywords": [
+   "closet",
+   "idle"
+  ],
+  "filling": []
+ },
+ "node_109": {
+  "node_count": 109,
+  "type_count": 105,
+  "type": "event",
+  "depth": 0,
+  "created": "2023-02-13 05:54:10",
+  "expiration": null,
+  "subject": "the Ville:Moore family's house:main room:refrigerator",
+  "predicate": "is",
+  "object": "idle",
+  "description": "refrigerator is idle",
+  "embedding_key": "refrigerator is idle",
+  "poignancy": 1,
+  "keywords": [
+   "refrigerator",
+   "idle"
+  ],
+  "filling": []
+ },
+ "node_108": {
+  "node_count": 108,
+  "type_count": 104,
+  "type": "event",
+  "depth": 0,
+  "created": "2023-02-13 05:54:10",
+  "expiration": null,
+  "subject": "the Ville:Moore family's house:main room:common room sofa",
+  "predicate": "is",
+  "object": "idle",
+  "description": "common room sofa is idle",
+  "embedding_key": "common room sofa is idle",
+  "poignancy": 1,
+  "keywords": [
+   "common room sofa",
+   "idle"
+  ],
+  "filling": []
+ },
+ "node_107": {
+  "node_count": 107,
+  "type_count": 103,
+  "type": "event",
+  "depth": 0,
+  "created": "2023-02-13 05:54:10",
+  "expiration": null,
+  "subject": "Jennifer Moore",
+  "predicate": "check",
+  "object": "emails",
+  "description": "Jennifer Moore is checking her emails",
+  "embedding_key": "checking her emails",
+  "poignancy": 3,
+  "keywords": [
+   "Jennifer Moore",
+   "emails"
+  ],
+  "filling": []
+ },
+ "node_106": {
+  "node_count": 106,
+  "type_count": 102,
+  "type": "event",
+  "depth": 0,
+  "created": "2023-02-13 05:54:10",
+  "expiration": null,
+  "subject": "Sam Moore",
+  "predicate": "eat",
+  "object": "breakfast",
+  "description": "Sam Moore is eating breakfast",
+  "embedding_key": "eating breakfast",
+  "poignancy": 2,
+  "keywords": [
+   "breakfast",
+   "Sam Moore"
+  ],
+  "filling": []
+ },
+ "node_105": {
+  "node_count": 105,
+  "type_count": 101,
+  "type": "event",
+  "depth": 0,
+  "created": "2023-02-13 05:40:00",
+  "expiration": null,
+  "subject": "Jennifer Moore",
+  "predicate": "have",
+  "object": "light breakfast",
+  "description": "Jennifer Moore is having a light breakfast",
+  "embedding_key": "having a light breakfast",
+  "poignancy": 3,
+  "keywords": [
+   "Jennifer Moore",
+   "light breakfast"
+  ],
+  "filling": []
+ },
+ "node_104": {
+  "node_count": 104,
+  "type_count": 100,
+  "type": "event",
+  "depth": 0,
+  "created": "2023-02-13 05:39:50",
+  "expiration": null,
+  "subject": "the Ville:Moore family's house:main room:desk",
+  "predicate": "is",
+  "object": "idle",
+  "description": "desk is idle",
+  "embedding_key": "desk is idle",
+  "poignancy": 1,
+  "keywords": [
+   "desk",
+   "idle"
+  ],
+  "filling": []
+ },
+ "node_103": {
+  "node_count": 103,
+  "type_count": 99,
+  "type": "event",
+  "depth": 0,
+  "created": "2023-02-13 05:39:50",
+  "expiration": null,
+  "subject": "the Ville:Moore family's house:main room:cooking area",
+  "predicate": "is",
+  "object": "idle",
+  "description": "cooking area is idle",
+  "embedding_key": "cooking area is idle",
+  "poignancy": 1,
+  "keywords": [
+   "cooking area",
+   "idle"
+  ],
+  "filling": []
+ },
+ "node_102": {
+  "node_count": 102,
+  "type_count": 98,
+  "type": "event",
+  "depth": 0,
+  "created": "2023-02-13 05:39:50",
+  "expiration": null,
+  "subject": "the Ville:Moore family's house:main room:kitchen sink",
+  "predicate": "fill",
+  "object": "dirty dishes",
+  "description": "kitchen sink is being filled with dirty dishes",
+  "embedding_key": "kitchen sink is being filled with dirty dishes",
+  "poignancy": 2,
+  "keywords": [
+   "kitchen sink",
+   "dirty dishes"
+  ],
+  "filling": []
+ },
+ "node_101": {
+  "node_count": 101,
+  "type_count": 97,
+  "type": "event",
+  "depth": 0,
+  "created": "2023-02-13 05:39:50",
+  "expiration": null,
+  "subject": "Sam Moore",
+  "predicate": "prepare",
+  "object": "breakfast",
+  "description": "Sam Moore is preparing breakfast",
+  "embedding_key": "preparing breakfast",
+  "poignancy": 2,
+  "keywords": [
+   "breakfast",
+   "Sam Moore"
+  ],
+  "filling": []
+ },
+ "node_100": {
+  "node_count": 100,
+  "type_count": 96,
+  "type": "event",
+  "depth": 0,
+  "created": "2023-02-13 05:39:50",
+  "expiration": null,
+  "subject": "the Ville:Moore family's house:main room:kitchen sink",
+  "predicate": "clean",
+  "object": "free of any dishes",
+  "description": "kitchen sink is clean and free of any dishes",
+  "embedding_key": "kitchen sink is clean and free of any dishes",
+  "poignancy": 2,
+  "keywords": [
+   "kitchen sink",
+   "free of any dishes"
+  ],
+  "filling": []
+ },
+ "node_99": {
+  "node_count": 99,
+  "type_count": 95,
+  "type": "event",
+  "depth": 0,
+  "created": "2023-02-13 05:39:20",
+  "expiration": null,
+  "subject": "the Ville:Moore family's house:main room:refrigerator",
+  "predicate": "is",
+  "object": "idle",
+  "description": "refrigerator is idle",
+  "embedding_key": "refrigerator is idle",
+  "poignancy": 1,
+  "keywords": [
+   "refrigerator",
+   "idle"
+  ],
+  "filling": []
+ },
+ "node_98": {
+  "node_count": 98,
+  "type_count": 94,
+  "type": "event",
+  "depth": 0,
+  "created": "2023-02-13 05:39:20",
+  "expiration": null,
+  "subject": "the Ville:Moore family's house:main room:common room sofa",
+  "predicate": "is",
+  "object": "idle",
+  "description": "common room sofa is idle",
+  "embedding_key": "common room sofa is idle",
+  "poignancy": 1,
+  "keywords": [
+   "common room sofa",
+   "idle"
+  ],
+  "filling": []
+ },
+ "node_97": {
+  "node_count": 97,
+  "type_count": 93,
+  "type": "event",
+  "depth": 0,
+  "created": "2023-02-13 05:39:10",
+  "expiration": null,
+  "subject": "the Ville:Moore family's house:main room:closet",
+  "predicate": "is",
+  "object": "idle",
+  "description": "closet is idle",
+  "embedding_key": "closet is idle",
+  "poignancy": 1,
+  "keywords": [
+   "closet",
+   "idle"
+  ],
+  "filling": []
+ },
+ "node_96": {
+  "node_count": 96,
+  "type_count": 92,
+  "type": "event",
+  "depth": 0,
+  "created": "2023-02-13 05:39:10",
+  "expiration": null,
+  "subject": "Jennifer Moore",
+  "predicate": "have",
+  "object": "light breakfast",
+  "description": "Jennifer Moore is having a light breakfast",
+  "embedding_key": "having a light breakfast",
+  "poignancy": 3,
+  "keywords": [
+   "Jennifer Moore",
+   "light breakfast"
+  ],
+  "filling": []
+ },
+ "node_95": {
+  "node_count": 95,
+  "type_count": 91,
+  "type": "event",
+  "depth": 0,
+  "created": "2023-02-13 05:39:10",
+  "expiration": null,
+  "subject": "the Ville:Moore family's house:main room:desk",
+  "predicate": "is",
+  "object": "idle",
+  "description": "desk is idle",
+  "embedding_key": "desk is idle",
+  "poignancy": 1,
+  "keywords": [
+   "desk",
+   "idle"
+  ],
+  "filling": []
+ },
+ "node_94": {
+  "node_count": 94,
+  "type_count": 90,
+  "type": "event",
+  "depth": 0,
+  "created": "2023-02-13 05:39:10",
+  "expiration": null,
+  "subject": "the Ville:Moore family's house:main room:cooking area",
+  "predicate": "is",
+  "object": "idle",
+  "description": "cooking area is idle",
+  "embedding_key": "cooking area is idle",
+  "poignancy": 1,
+  "keywords": [
+   "cooking area",
+   "idle"
+  ],
+  "filling": []
+ },
+ "node_93": {
+  "node_count": 93,
+  "type_count": 89,
+  "type": "event",
+  "depth": 0,
+  "created": "2023-02-13 05:39:10",
+  "expiration": null,
+  "subject": "the Ville:Moore family's house:main room:kitchen sink",
+  "predicate": "fill",
+  "object": "dirty dishes",
+  "description": "kitchen sink is being filled with dirty dishes",
+  "embedding_key": "kitchen sink is being filled with dirty dishes",
+  "poignancy": 2,
+  "keywords": [
+   "kitchen sink",
+   "dirty dishes"
+  ],
+  "filling": []
+ },
+ "node_92": {
+  "node_count": 92,
+  "type_count": 88,
+  "type": "event",
+  "depth": 0,
+  "created": "2023-02-13 05:39:10",
+  "expiration": null,
+  "subject": "Sam Moore",
+  "predicate": "prepare",
+  "object": "breakfast",
+  "description": "Sam Moore is preparing breakfast",
+  "embedding_key": "preparing breakfast",
+  "poignancy": 3,
+  "keywords": [
+   "breakfast",
+   "Sam Moore"
+  ],
+  "filling": []
+ },
+ "node_91": {
+  "node_count": 91,
+  "type_count": 87,
+  "type": "event",
+  "depth": 0,
+  "created": "2023-02-13 05:34:40",
+  "expiration": null,
+  "subject": "Jennifer Moore",
+  "predicate": "get",
+  "object": "dressed",
+  "description": "Jennifer Moore is getting dressed",
+  "embedding_key": "getting dressed",
+  "poignancy": 2,
+  "keywords": [
+   "dressed",
+   "Jennifer Moore"
+  ],
+  "filling": []
+ },
+ "node_90": {
+  "node_count": 90,
+  "type_count": 86,
+  "type": "event",
+  "depth": 0,
+  "created": "2023-02-13 05:34:40",
+  "expiration": null,
+  "subject": "the Ville:Moore family's house:main room:refrigerator",
+  "predicate": "is",
+  "object": "idle",
+  "description": "refrigerator is idle",
+  "embedding_key": "refrigerator is idle",
+  "poignancy": 1,
+  "keywords": [
+   "refrigerator",
+   "idle"
+  ],
+  "filling": []
+ },
+ "node_89": {
+  "node_count": 89,
+  "type_count": 85,
+  "type": "event",
+  "depth": 0,
+  "created": "2023-02-13 05:34:40",
+  "expiration": null,
+  "subject": "the Ville:Moore family's house:main room:kitchen sink",
+  "predicate": "use",
+  "object": "washing dishes",
+  "description": "kitchen sink is being used for washing dishes",
+  "embedding_key": "kitchen sink is being used for washing dishes",
+  "poignancy": 3,
+  "keywords": [
+   "kitchen sink",
+   "washing dishes"
+  ],
+  "filling": []
+ },
+ "node_88": {
+  "node_count": 88,
+  "type_count": 84,
+  "type": "event",
+  "depth": 0,
+  "created": "2023-02-13 05:34:10",
+  "expiration": null,
+  "subject": "the Ville:Moore family's house:main room:common room sofa",
+  "predicate": "is",
+  "object": "idle",
+  "description": "common room sofa is idle",
+  "embedding_key": "common room sofa is idle",
+  "poignancy": 1,
+  "keywords": [
+   "common room sofa",
+   "idle"
+  ],
+  "filling": []
+ },
+ "node_87": {
+  "node_count": 87,
+  "type_count": 83,
+  "type": "event",
+  "depth": 0,
+  "created": "2023-02-13 05:34:10",
+  "expiration": null,
+  "subject": "the Ville:Moore family's house:main room:closet",
+  "predicate": "is",
+  "object": "idle",
+  "description": "closet is idle",
+  "embedding_key": "closet is idle",
+  "poignancy": 1,
+  "keywords": [
+   "closet",
+   "idle"
+  ],
+  "filling": []
+ },
+ "node_86": {
+  "node_count": 86,
+  "type_count": 82,
+  "type": "event",
+  "depth": 0,
+  "created": "2023-02-13 05:34:10",
+  "expiration": null,
+  "subject": "Sam Moore",
+  "predicate": "have",
+  "object": "glass of water",
+  "description": "Sam Moore is having a glass of water",
+  "embedding_key": "having a glass of water",
+  "poignancy": 1,
+  "keywords": [
+   "Sam Moore",
+   "glass of water"
+  ],
+  "filling": []
+ },
+ "node_85": {
+  "node_count": 85,
+  "type_count": 81,
+  "type": "event",
+  "depth": 0,
+  "created": "2023-02-13 05:31:00",
+  "expiration": null,
+  "subject": "the Ville:Moore family's house:main room:cooking area",
+  "predicate": "is",
+  "object": "idle",
+  "description": "cooking area is idle",
+  "embedding_key": "cooking area is idle",
+  "poignancy": 1,
+  "keywords": [
+   "cooking area",
+   "idle"
+  ],
+  "filling": []
+ },
+ "node_84": {
+  "node_count": 84,
+  "type_count": 80,
+  "type": "event",
+  "depth": 0,
+  "created": "2023-02-13 05:31:00",
+  "expiration": null,
+  "subject": "the Ville:Moore family's house:main room:desk",
+  "predicate": "is",
+  "object": "idle",
+  "description": "desk is idle",
+  "embedding_key": "desk is idle",
+  "poignancy": 1,
+  "keywords": [
+   "desk",
+   "idle"
+  ],
+  "filling": []
+ },
+ "node_83": {
+  "node_count": 83,
+  "type_count": 79,
+  "type": "event",
+  "depth": 0,
+  "created": "2023-02-13 05:30:50",
+  "expiration": null,
+  "subject": "the Ville:Moore family's house:main room:kitchen sink",
+  "predicate": "is",
+  "object": "idle",
+  "description": "kitchen sink is idle",
+  "embedding_key": "kitchen sink is idle",
+  "poignancy": 1,
+  "keywords": [
+   "kitchen sink",
+   "idle"
+  ],
+  "filling": []
+ },
+ "node_82": {
+  "node_count": 82,
+  "type_count": 78,
+  "type": "event",
+  "depth": 0,
+  "created": "2023-02-13 05:30:50",
+  "expiration": null,
+  "subject": "the Ville:Moore family's house:main room:closet",
+  "predicate": "use",
+  "object": "Jennifer Moore",
+  "description": "closet is being used by Jennifer Moore to select her outfit for the day",
+  "embedding_key": "closet is being used by Jennifer Moore to select her outfit for the day",
+  "poignancy": 2,
+  "keywords": [
+   "closet",
+   "Jennifer Moore"
+  ],
+  "filling": []
+ },
+ "node_81": {
+  "node_count": 81,
+  "type_count": 77,
+  "type": "event",
+  "depth": 0,
+  "created": "2023-02-13 05:29:50",
+  "expiration": null,
+  "subject": "Jennifer Moore",
+  "predicate": "get",
+  "object": "dressed",
+  "description": "Jennifer Moore is getting dressed",
+  "embedding_key": "getting dressed",
+  "poignancy": 2,
+  "keywords": [
+   "dressed",
+   "Jennifer Moore"
+  ],
+  "filling": []
+ },
+ "node_80": {
+  "node_count": 80,
+  "type_count": 76,
+  "type": "event",
+  "depth": 0,
+  "created": "2023-02-13 05:25:50",
+  "expiration": null,
+  "subject": "the Ville:Moore family's house:main room:closet",
+  "predicate": "access",
+  "object": "Sam Moore",
+  "description": "closet is being accessed by Sam Moore as he selects the clothes for his morning routine",
+  "embedding_key": "closet is being accessed by Sam Moore as he selects the clothes for his morning routine",
+  "poignancy": 2,
+  "keywords": [
+   "Sam Moore",
+   "closet"
+  ],
+  "filling": []
+ },
+ "node_79": {
+  "node_count": 79,
+  "type_count": 75,
+  "type": "event",
+  "depth": 0,
+  "created": "2023-02-13 05:25:00",
+  "expiration": null,
+  "subject": "Sam Moore",
+  "predicate": "get",
+  "object": "dressed",
+  "description": "Sam Moore is getting dressed",
+  "embedding_key": "getting dressed",
+  "poignancy": 1,
+  "keywords": [
+   "dressed",
+   "Sam Moore"
+  ],
+  "filling": []
+ },
+ "node_78": {
+  "node_count": 78,
+  "type_count": 74,
+  "type": "event",
+  "depth": 0,
+  "created": "2023-02-13 05:24:50",
+  "expiration": null,
+  "subject": "the Ville:Moore family's house:main room:common room sofa",
+  "predicate": "is",
+  "object": "idle",
+  "description": "common room sofa is idle",
+  "embedding_key": "common room sofa is idle",
+  "poignancy": 1,
+  "keywords": [
+   "common room sofa",
+   "idle"
+  ],
+  "filling": []
+ },
+ "node_77": {
+  "node_count": 77,
+  "type_count": 73,
+  "type": "event",
+  "depth": 0,
+  "created": "2023-02-13 05:24:50",
+  "expiration": null,
+  "subject": "the Ville:Moore family's house:main room:closet",
+  "predicate": "is",
+  "object": "idle",
+  "description": "closet is idle",
+  "embedding_key": "closet is idle",
+  "poignancy": 1,
+  "keywords": [
+   "closet",
+   "idle"
+  ],
+  "filling": []
+ },
+ "node_76": {
+  "node_count": 76,
+  "type_count": 72,
+  "type": "event",
+  "depth": 0,
+  "created": "2023-02-13 05:24:50",
+  "expiration": null,
+  "subject": "the Ville:Moore family's house:main room:cooking area",
+  "predicate": "is",
+  "object": "idle",
+  "description": "cooking area is idle",
+  "embedding_key": "cooking area is idle",
+  "poignancy": 1,
+  "keywords": [
+   "cooking area",
+   "idle"
+  ],
+  "filling": []
+ },
+ "node_75": {
+  "node_count": 75,
+  "type_count": 71,
+  "type": "event",
+  "depth": 0,
+  "created": "2023-02-13 05:24:50",
+  "expiration": null,
+  "subject": "the Ville:Moore family's house:main room:desk",
+  "predicate": "is",
+  "object": "idle",
+  "description": "desk is idle",
+  "embedding_key": "desk is idle",
+  "poignancy": 1,
+  "keywords": [
+   "desk",
+   "idle"
+  ],
+  "filling": []
+ },
+ "node_74": {
+  "node_count": 74,
+  "type_count": 70,
+  "type": "event",
+  "depth": 0,
+  "created": "2023-02-13 05:24:50",
+  "expiration": null,
+  "subject": "the Ville:Moore family's house:main room:kitchen sink",
+  "predicate": "is",
+  "object": "idle",
+  "description": "kitchen sink is idle",
+  "embedding_key": "kitchen sink is idle",
+  "poignancy": 1,
+  "keywords": [
+   "kitchen sink",
+   "idle"
+  ],
+  "filling": []
+ },
+ "node_73": {
+  "node_count": 73,
+  "type_count": 69,
+  "type": "event",
+  "depth": 0,
+  "created": "2023-02-13 05:24:50",
+  "expiration": null,
+  "subject": "the Ville:Moore family's house:main room:bed",
+  "predicate": "is",
+  "object": "idle",
+  "description": "bed is idle",
+  "embedding_key": "bed is idle",
+  "poignancy": 1,
+  "keywords": [
+   "idle",
+   "bed"
+  ],
+  "filling": []
+ },
+ "node_72": {
+  "node_count": 72,
+  "type_count": 68,
+  "type": "event",
+  "depth": 0,
+  "created": "2023-02-13 05:24:50",
+  "expiration": null,
+  "subject": "the Ville:Moore family's house:main room:refrigerator",
+  "predicate": "is",
+  "object": "idle",
+  "description": "refrigerator is idle",
+  "embedding_key": "refrigerator is idle",
+  "poignancy": 1,
+  "keywords": [
+   "refrigerator",
+   "idle"
+  ],
+  "filling": []
+ },
+ "node_71": {
+  "node_count": 71,
+  "type_count": 67,
+  "type": "event",
+  "depth": 0,
+  "created": "2023-02-13 05:24:10",
+  "expiration": null,
+  "subject": "the Ville:Moore family's house:bathroom:toilet",
+  "predicate": "is",
+  "object": "idle",
+  "description": "toilet is idle",
+  "embedding_key": "toilet is idle",
+  "poignancy": 1,
+  "keywords": [
+   "toilet",
+   "idle"
+  ],
+  "filling": []
+ },
+ "node_70": {
+  "node_count": 70,
+  "type_count": 66,
+  "type": "event",
+  "depth": 0,
+  "created": "2023-02-13 05:24:10",
+  "expiration": null,
+  "subject": "the Ville:Moore family's house:bathroom:shower",
+  "predicate": "is",
+  "object": "idle",
+  "description": "shower is idle",
+  "embedding_key": "shower is idle",
+  "poignancy": 1,
+  "keywords": [
+   "idle",
+   "shower"
+  ],
+  "filling": []
+ },
+ "node_69": {
+  "node_count": 69,
+  "type_count": 65,
+  "type": "event",
+  "depth": 0,
+  "created": "2023-02-13 05:24:10",
+  "expiration": null,
+  "subject": "the Ville:Moore family's house:bathroom:bathroom sink",
+  "predicate": "is",
+  "object": "idle",
+  "description": "bathroom sink is idle",
+  "embedding_key": "bathroom sink is idle",
+  "poignancy": 1,
+  "keywords": [
+   "idle",
+   "bathroom sink"
+  ],
+  "filling": []
+ },
+ "node_68": {
+  "node_count": 68,
+  "type_count": 64,
+  "type": "event",
+  "depth": 0,
+  "created": "2023-02-13 05:24:10",
+  "expiration": null,
+  "subject": "Jennifer Moore",
+  "predicate": "wash",
+  "object": "face",
+  "description": "Jennifer Moore is washing her face",
+  "embedding_key": "washing her face",
+  "poignancy": 4,
+  "keywords": [
+   "Jennifer Moore",
+   "face"
+  ],
+  "filling": []
+ },
+ "node_67": {
+  "node_count": 67,
+  "type_count": 63,
+  "type": "event",
+  "depth": 0,
+  "created": "2023-02-13 05:24:10",
+  "expiration": null,
+  "subject": "Sam Moore",
+  "predicate": "get",
+  "object": "dressed",
+  "description": "Sam Moore is getting dressed",
+  "embedding_key": "getting dressed",
+  "poignancy": 1,
+  "keywords": [
+   "dressed",
+   "Sam Moore"
+  ],
+  "filling": []
+ },
+ "node_66": {
+  "node_count": 66,
+  "type_count": 62,
+  "type": "event",
+  "depth": 0,
+  "created": "2023-02-13 05:20:00",
+  "expiration": null,
+  "subject": "the Ville:Moore family's house:bathroom:bathroom sink",
+  "predicate": "use",
+  "object": "Jennifer Moore",
+  "description": "bathroom sink is being used by Jennifer Moore to brush her teeth",
+  "embedding_key": "bathroom sink is being used by Jennifer Moore to brush her teeth",
+  "poignancy": 2,
+  "keywords": [
+   "Jennifer Moore",
+   "bathroom sink"
+  ],
+  "filling": []
+ },
+ "node_65": {
+  "node_count": 65,
+  "type_count": 61,
+  "type": "event",
+  "depth": 0,
+  "created": "2023-02-13 05:19:20",
+  "expiration": null,
+  "subject": "Jennifer Moore",
+  "predicate": "brush",
+  "object": "teeth",
+  "description": "Jennifer Moore is brushing her teeth",
+  "embedding_key": "brushing her teeth",
+  "poignancy": 2,
+  "keywords": [
+   "Jennifer Moore",
+   "teeth"
+  ],
+  "filling": []
+ },
+ "node_64": {
+  "node_count": 64,
+  "type_count": 60,
+  "type": "event",
+  "depth": 0,
+  "created": "2023-02-13 05:19:10",
+  "expiration": null,
+  "subject": "Sam Moore",
+  "predicate": "wash",
+  "object": "face",
+  "description": "Sam Moore is washing his face",
+  "embedding_key": "washing his face",
+  "poignancy": 2,
+  "keywords": [
+   "Sam Moore",
+   "face"
+  ],
+  "filling": []
+ },
+ "node_63": {
+  "node_count": 63,
+  "type_count": 59,
+  "type": "event",
+  "depth": 0,
+  "created": "2023-02-13 05:19:10",
+  "expiration": null,
+  "subject": "the Ville:Moore family's house:bathroom:bathroom sink",
+  "predicate": "use",
+  "object": "N/A",
+  "description": "bathroom sink is being used",
+  "embedding_key": "bathroom sink is being used",
+  "poignancy": 1,
+  "keywords": [
+   "bathroom sink",
+   "N/A"
+  ],
+  "filling": []
+ },
+ "node_62": {
+  "node_count": 62,
+  "type_count": 58,
+  "type": "event",
+  "depth": 0,
+  "created": "2023-02-13 05:15:30",
+  "expiration": null,
+  "subject": "the Ville:Moore family's house:bathroom:bathroom sink",
+  "predicate": "use",
+  "object": "Sam Moore",
+  "description": "bathroom sink is being used by Sam Moore for brushing his teeth",
+  "embedding_key": "bathroom sink is being used by Sam Moore for brushing his teeth",
+  "poignancy": 2,
+  "keywords": [
+   "Sam Moore",
+   "bathroom sink"
+  ],
+  "filling": []
+ },
+ "node_61": {
+  "node_count": 61,
+  "type_count": 57,
+  "type": "event",
+  "depth": 0,
+  "created": "2023-02-13 05:15:00",
+  "expiration": null,
+  "subject": "the Ville:Moore family's house:bathroom:shower",
+  "predicate": "is",
+  "object": "idle",
+  "description": "shower is idle",
+  "embedding_key": "shower is idle",
+  "poignancy": 1,
+  "keywords": [
+   "idle",
+   "shower"
+  ],
+  "filling": []
+ },
+ "node_60": {
+  "node_count": 60,
+  "type_count": 56,
+  "type": "event",
+  "depth": 0,
+  "created": "2023-02-13 05:15:00",
+  "expiration": null,
+  "subject": "the Ville:Moore family's house:bathroom:toilet",
+  "predicate": "is",
+  "object": "idle",
+  "description": "toilet is idle",
+  "embedding_key": "toilet is idle",
+  "poignancy": 1,
+  "keywords": [
+   "toilet",
+   "idle"
+  ],
+  "filling": []
+ },
+ "node_59": {
+  "node_count": 59,
+  "type_count": 55,
+  "type": "event",
+  "depth": 0,
+  "created": "2023-02-13 05:15:00",
+  "expiration": null,
+  "subject": "the Ville:Moore family's house:bathroom:bathroom sink",
+  "predicate": "is",
+  "object": "idle",
+  "description": "bathroom sink is idle",
+  "embedding_key": "bathroom sink is idle",
+  "poignancy": 1,
+  "keywords": [
+   "idle",
+   "bathroom sink"
+  ],
+  "filling": []
+ },
+ "node_58": {
+  "node_count": 58,
+  "type_count": 54,
+  "type": "event",
+  "depth": 0,
+  "created": "2023-02-13 05:14:50",
+  "expiration": null,
+  "subject": "the Ville:Moore family's house:main room:cooking area",
+  "predicate": "is",
+  "object": "idle",
+  "description": "cooking area is idle",
+  "embedding_key": "cooking area is idle",
+  "poignancy": 1,
+  "keywords": [
+   "cooking area",
+   "idle"
+  ],
+  "filling": []
+ },
+ "node_57": {
+  "node_count": 57,
+  "type_count": 53,
+  "type": "event",
+  "depth": 0,
+  "created": "2023-02-13 05:14:50",
+  "expiration": null,
+  "subject": "Sam Moore",
+  "predicate": "brush",
+  "object": "teeth",
+  "description": "Sam Moore is brushing his teeth",
+  "embedding_key": "brushing his teeth",
+  "poignancy": 2,
+  "keywords": [
+   "Sam Moore",
+   "teeth"
+  ],
+  "filling": []
+ },
+ "node_56": {
+  "node_count": 56,
+  "type_count": 52,
+  "type": "event",
+  "depth": 0,
+  "created": "2023-02-13 05:14:40",
+  "expiration": null,
+  "subject": "Jennifer Moore",
+  "predicate": "make",
+  "object": "bed",
+  "description": "Jennifer Moore is making her bed",
+  "embedding_key": "making her bed",
+  "poignancy": 2,
+  "keywords": [
+   "bed",
+   "Jennifer Moore"
+  ],
+  "filling": []
+ },
+ "node_55": {
+  "node_count": 55,
+  "type_count": 51,
+  "type": "event",
+  "depth": 0,
+  "created": "2023-02-13 05:14:30",
+  "expiration": null,
+  "subject": "the Ville:Moore family's house:main room:bed",
+  "predicate": "is",
+  "object": "idle",
+  "description": "bed is idle",
+  "embedding_key": "bed is idle",
+  "poignancy": 1,
+  "keywords": [
+   "idle",
+   "bed"
+  ],
+  "filling": []
+ },
+ "node_54": {
+  "node_count": 54,
+  "type_count": 50,
+  "type": "event",
+  "depth": 0,
+  "created": "2023-02-13 05:14:20",
+  "expiration": null,
+  "subject": "the Ville:Moore family's house:main room:common room sofa",
+  "predicate": "is",
+  "object": "idle",
+  "description": "common room sofa is idle",
+  "embedding_key": "common room sofa is idle",
+  "poignancy": 1,
+  "keywords": [
+   "common room sofa",
+   "idle"
+  ],
+  "filling": []
+ },
+ "node_53": {
+  "node_count": 53,
+  "type_count": 49,
+  "type": "event",
+  "depth": 0,
+  "created": "2023-02-13 05:14:20",
+  "expiration": null,
+  "subject": "the Ville:Moore family's house:main room:desk",
+  "predicate": "is",
+  "object": "idle",
+  "description": "desk is idle",
+  "embedding_key": "desk is idle",
+  "poignancy": 1,
+  "keywords": [
+   "desk",
+   "idle"
+  ],
+  "filling": []
+ },
+ "node_52": {
+  "node_count": 52,
+  "type_count": 48,
+  "type": "event",
+  "depth": 0,
+  "created": "2023-02-13 05:14:10",
+  "expiration": null,
+  "subject": "the Ville:Moore family's house:main room:refrigerator",
+  "predicate": "is",
+  "object": "idle",
+  "description": "refrigerator is idle",
+  "embedding_key": "refrigerator is idle",
+  "poignancy": 1,
+  "keywords": [
+   "refrigerator",
+   "idle"
+  ],
+  "filling": []
+ },
+ "node_51": {
+  "node_count": 51,
+  "type_count": 47,
+  "type": "event",
+  "depth": 0,
+  "created": "2023-02-13 05:14:10",
+  "expiration": null,
+  "subject": "the Ville:Moore family's house:main room:closet",
+  "predicate": "is",
+  "object": "idle",
+  "description": "closet is idle",
+  "embedding_key": "closet is idle",
+  "poignancy": 1,
+  "keywords": [
+   "closet",
+   "idle"
+  ],
+  "filling": []
+ },
+ "node_50": {
+  "node_count": 50,
+  "type_count": 46,
+  "type": "event",
+  "depth": 0,
+  "created": "2023-02-13 05:14:10",
+  "expiration": null,
+  "subject": "the Ville:Moore family's house:main room:kitchen sink",
+  "predicate": "is",
+  "object": "idle",
+  "description": "kitchen sink is idle",
+  "embedding_key": "kitchen sink is idle",
+  "poignancy": 1,
+  "keywords": [
+   "kitchen sink",
+   "idle"
+  ],
+  "filling": []
+ },
+ "node_49": {
+  "node_count": 49,
+  "type_count": 45,
+  "type": "event",
+  "depth": 0,
+  "created": "2023-02-13 05:14:10",
+  "expiration": null,
+  "subject": "the Ville:Moore family's house:main room:cooking area",
+  "predicate": "is",
+  "object": "idle",
+  "description": "cooking area is idle",
+  "embedding_key": "cooking area is idle",
+  "poignancy": 1,
+  "keywords": [
+   "cooking area",
+   "idle"
+  ],
+  "filling": []
+ },
+ "node_48": {
+  "node_count": 48,
+  "type_count": 44,
+  "type": "event",
+  "depth": 0,
+  "created": "2023-02-13 05:14:10",
+  "expiration": null,
+  "subject": "Sam Moore",
+  "predicate": "brush",
+  "object": "teeth",
+  "description": "Sam Moore is brushing his teeth",
+  "embedding_key": "brushing his teeth",
+  "poignancy": 2,
+  "keywords": [
+   "Sam Moore",
+   "teeth"
+  ],
+  "filling": []
+ },
+ "node_47": {
+  "node_count": 47,
+  "type_count": 43,
+  "type": "event",
+  "depth": 0,
+  "created": "2023-02-13 05:14:10",
+  "expiration": null,
+  "subject": "Jennifer Moore",
+  "predicate": "make",
+  "object": "bed",
+  "description": "Jennifer Moore is making her bed",
+  "embedding_key": "making her bed",
+  "poignancy": 2,
+  "keywords": [
+   "bed",
+   "Jennifer Moore"
+  ],
+  "filling": []
+ },
+ "node_46": {
+  "node_count": 46,
+  "type_count": 42,
+  "type": "event",
+  "depth": 0,
+  "created": "2023-02-13 05:08:40",
+  "expiration": null,
+  "subject": "the Ville:Moore family's house:main room:cooking area",
+  "predicate": "busy",
+  "object": "filled with aroma",
+  "description": "cooking area is busy and filled with the aroma of freshly made pancakes",
+  "embedding_key": "cooking area is busy and filled with the aroma of freshly made pancakes",
+  "poignancy": 3,
+  "keywords": [
+   "cooking area",
+   "filled with aroma"
+  ],
+  "filling": []
+ },
+ "node_45": {
+  "node_count": 45,
+  "type_count": 41,
+  "type": "event",
+  "depth": 0,
+  "created": "2023-02-13 05:08:30",
+  "expiration": null,
+  "subject": "the Ville:Moore family's house:main room:common room sofa",
+  "predicate": "is",
+  "object": "idle",
+  "description": "common room sofa is idle",
+  "embedding_key": "common room sofa is idle",
+  "poignancy": 1,
+  "keywords": [
+   "common room sofa",
+   "idle"
+  ],
+  "filling": []
+ },
+ "node_44": {
+  "node_count": 44,
+  "type_count": 40,
+  "type": "event",
+  "depth": 0,
+  "created": "2023-02-13 05:08:30",
+  "expiration": null,
+  "subject": "Jennifer Moore",
+  "predicate": "converse",
+  "object": "couple",
+  "description": "Jennifer Moore is conversing about a couple, Sam and Jennifer Moore, discussing their plans for the day over breakfast and preparing Jennifer's favorite pancakes together.",
+  "embedding_key": "conversing about a couple, Sam and Jennifer Moore, discussing their plans for the day over breakfast and preparing Jennifer's favorite pancakes together.",
+  "poignancy": 7,
+  "keywords": [
+   "couple",
+   "Jennifer Moore"
+  ],
+  "filling": []
+ },
+ "node_43": {
+  "node_count": 43,
+  "type_count": 39,
+  "type": "event",
+  "depth": 0,
+  "created": "2023-02-13 05:08:20",
+  "expiration": null,
+  "subject": "Sam Moore",
+  "predicate": "converse",
+  "object": "couple",
+  "description": "Sam Moore is conversing about a couple, Sam and Jennifer Moore, discussing their plans for the day over breakfast and preparing Jennifer's favorite pancakes together.",
+  "embedding_key": "conversing about a couple, Sam and Jennifer Moore, discussing their plans for the day over breakfast and preparing Jennifer's favorite pancakes together.",
+  "poignancy": 7,
+  "keywords": [
+   "couple",
+   "Sam Moore"
+  ],
+  "filling": []
+ },
+ "node_42": {
+  "node_count": 42,
+  "type_count": 38,
+  "type": "event",
+  "depth": 0,
+  "created": "2023-02-13 05:08:10",
+  "expiration": null,
+  "subject": "the Ville:Moore family's house:main room:closet",
+  "predicate": "is",
+  "object": "idle",
+  "description": "closet is idle",
+  "embedding_key": "closet is idle",
+  "poignancy": 1,
+  "keywords": [
+   "closet",
+   "idle"
+  ],
+  "filling": []
+ },
+ "node_41": {
+  "node_count": 41,
+  "type_count": 37,
+  "type": "event",
+  "depth": 0,
+  "created": "2023-02-13 05:08:10",
+  "expiration": null,
+  "subject": "the Ville:Moore family's house:main room:desk",
+  "predicate": "is",
+  "object": "idle",
+  "description": "desk is idle",
+  "embedding_key": "desk is idle",
+  "poignancy": 1,
+  "keywords": [
+   "desk",
+   "idle"
+  ],
+  "filling": []
+ },
+ "node_40": {
+  "node_count": 40,
+  "type_count": 36,
+  "type": "event",
+  "depth": 0,
+  "created": "2023-02-13 05:08:10",
+  "expiration": null,
+  "subject": "the Ville:Moore family's house:main room:kitchen sink",
+  "predicate": "is",
+  "object": "idle",
+  "description": "kitchen sink is idle",
+  "embedding_key": "kitchen sink is idle",
+  "poignancy": 1,
+  "keywords": [
+   "kitchen sink",
+   "idle"
+  ],
+  "filling": []
+ },
+ "node_39": {
+  "node_count": 39,
+  "type_count": 35,
+  "type": "event",
+  "depth": 0,
+  "created": "2023-02-13 05:08:10",
+  "expiration": null,
+  "subject": "the Ville:Moore family's house:main room:cooking area",
+  "predicate": "use",
+  "object": "be",
+  "description": "cooking area is being used and in a state of activity",
+  "embedding_key": "cooking area is being used and in a state of activity",
+  "poignancy": 3,
+  "keywords": [
+   "cooking area",
+   "be"
+  ],
+  "filling": []
+ },
+ "node_38": {
+  "node_count": 38,
+  "type_count": 34,
+  "type": "event",
+  "depth": 0,
+  "created": "2023-02-13 05:08:00",
+  "expiration": null,
+  "subject": "the Ville:Moore family's house:main room:refrigerator",
+  "predicate": "is",
+  "object": "idle",
+  "description": "refrigerator is idle",
+  "embedding_key": "refrigerator is idle",
+  "poignancy": 1,
+  "keywords": [
+   "refrigerator",
+   "idle"
+  ],
+  "filling": []
+ },
+ "node_37": {
+  "node_count": 37,
+  "type_count": 33,
+  "type": "event",
+  "depth": 0,
+  "created": "2023-02-13 05:08:00",
+  "expiration": null,
+  "subject": "the Ville:Moore family's house:main room:cooking area",
+  "predicate": "busy",
+  "object": "filled with aroma",
+  "description": "cooking area is busy and filled with the aroma of freshly made pancakes",
+  "embedding_key": "cooking area is busy and filled with the aroma of freshly made pancakes",
+  "poignancy": 7,
+  "keywords": [
+   "cooking area",
+   "filled with aroma"
+  ],
+  "filling": []
+ },
+ "node_36": {
+  "node_count": 36,
+  "type_count": 32,
+  "type": "event",
+  "depth": 0,
+  "created": "2023-02-13 05:07:50",
+  "expiration": null,
+  "subject": "the Ville:Moore family's house:main room:common room sofa",
+  "predicate": "is",
+  "object": "idle",
+  "description": "common room sofa is idle",
+  "embedding_key": "common room sofa is idle",
+  "poignancy": 1,
+  "keywords": [
+   "common room sofa",
+   "idle"
+  ],
+  "filling": []
+ },
+ "node_35": {
+  "node_count": 35,
+  "type_count": 31,
+  "type": "event",
+  "depth": 0,
+  "created": "2023-02-13 05:07:10",
+  "expiration": null,
+  "subject": "Jennifer Moore",
+  "predicate": "converse",
+  "object": "couple",
+  "description": "Jennifer Moore is conversing about a couple, Sam and Jennifer Moore, discussing their plans for the day over breakfast and preparing Jennifer's favorite pancakes together.",
+  "embedding_key": "conversing about a couple, Sam and Jennifer Moore, discussing their plans for the day over breakfast and preparing Jennifer's favorite pancakes together.",
+  "poignancy": 6,
+  "keywords": [
+   "couple",
+   "Jennifer Moore"
+  ],
+  "filling": []
+ },
+ "node_34": {
+  "node_count": 34,
+  "type_count": 30,
+  "type": "event",
+  "depth": 0,
+  "created": "2023-02-13 05:07:10",
+  "expiration": null,
+  "subject": "the Ville:Moore family's house:main room:bed",
+  "predicate": "is",
+  "object": "idle",
+  "description": "bed is idle",
+  "embedding_key": "bed is idle",
+  "poignancy": 1,
+  "keywords": [
+   "idle",
+   "bed"
+  ],
+  "filling": []
+ },
+ "node_33": {
+  "node_count": 33,
+  "type_count": 29,
+  "type": "event",
+  "depth": 0,
+  "created": "2023-02-13 05:07:10",
+  "expiration": null,
+  "subject": "Sam Moore",
+  "predicate": "converse",
+  "object": "couple",
+  "description": "Sam Moore is conversing about a couple, Sam and Jennifer Moore, discussing their plans for the day over breakfast and preparing Jennifer's favorite pancakes together.",
+  "embedding_key": "conversing about a couple, Sam and Jennifer Moore, discussing their plans for the day over breakfast and preparing Jennifer's favorite pancakes together.",
+  "poignancy": 7,
+  "keywords": [
+   "couple",
+   "Sam Moore"
+  ],
+  "filling": []
+ },
+ "node_32": {
+  "node_count": 32,
+  "type_count": 3,
+  "type": "thought",
+  "depth": 1,
+  "created": "2023-02-13 05:06:50",
+  "expiration": "2023-03-15 05:06:50",
+  "subject": "Sam Moore",
+  "predicate": "find",
+  "object": "busy day plans",
+  "description": "Sam Moore Sam Moore found Jennifer's busy day plans and the idea of having breakfast together before starting the day interesting.",
+  "embedding_key": "Sam Moore Sam Moore found Jennifer's busy day plans and the idea of having breakfast together before starting the day interesting.",
+  "poignancy": 7,
+  "keywords": [
+   "Sam Moore",
+   "busy day plans",
+   "find"
+  ],
+  "filling": [
+   "node_23"
+  ]
+ },
+ "node_31": {
+  "node_count": 31,
+  "type_count": 2,
+  "type": "thought",
+  "depth": 1,
+  "created": "2023-02-13 05:06:50",
+  "expiration": "2023-03-15 05:06:50",
+  "subject": "Sam Moore",
+  "predicate": "plan",
+  "object": "prepare pancake batter",
+  "description": "For Sam Moore's planning: needs to remember to prepare the pancake batter for breakfast with Jennifer.",
+  "embedding_key": "For Sam Moore's planning: needs to remember to prepare the pancake batter for breakfast with Jennifer.",
+  "poignancy": 3,
+  "keywords": [
+   "Sam Moore",
+   "prepare pancake batter",
+   "plan"
+  ],
+  "filling": [
+   "node_23"
+  ]
+ },
+ "node_30": {
+  "node_count": 30,
+  "type_count": 28,
+  "type": "event",
+  "depth": 0,
+  "created": "2023-02-13 05:00:20",
+  "expiration": null,
+  "subject": "the Ville:Moore family's house:main room:cooking area",
+  "predicate": "is",
+  "object": "idle",
+  "description": "cooking area is idle",
+  "embedding_key": "cooking area is idle",
+  "poignancy": 1,
+  "keywords": [
+   "cooking area",
+   "idle"
+  ],
+  "filling": []
+ },
+ "node_29": {
+  "node_count": 29,
+  "type_count": 27,
+  "type": "event",
+  "depth": 0,
+  "created": "2023-02-13 05:00:20",
+  "expiration": null,
+  "subject": "the Ville:Moore family's house:main room:closet",
+  "predicate": "is",
+  "object": "idle",
+  "description": "closet is idle",
+  "embedding_key": "closet is idle",
+  "poignancy": 1,
+  "keywords": [
+   "closet",
+   "idle"
+  ],
+  "filling": []
+ },
+ "node_28": {
+  "node_count": 28,
+  "type_count": 26,
+  "type": "event",
+  "depth": 0,
+  "created": "2023-02-13 05:00:20",
+  "expiration": null,
+  "subject": "the Ville:Moore family's house:main room:kitchen sink",
+  "predicate": "is",
+  "object": "idle",
+  "description": "kitchen sink is idle",
+  "embedding_key": "kitchen sink is idle",
+  "poignancy": 1,
+  "keywords": [
+   "kitchen sink",
+   "idle"
+  ],
+  "filling": []
+ },
+ "node_27": {
+  "node_count": 27,
+  "type_count": 25,
+  "type": "event",
+  "depth": 0,
+  "created": "2023-02-13 05:00:20",
+  "expiration": null,
+  "subject": "the Ville:Moore family's house:main room:desk",
+  "predicate": "is",
+  "object": "idle",
+  "description": "desk is idle",
+  "embedding_key": "desk is idle",
+  "poignancy": 1,
+  "keywords": [
+   "desk",
+   "idle"
+  ],
+  "filling": []
+ },
+ "node_26": {
+  "node_count": 26,
+  "type_count": 24,
+  "type": "event",
+  "depth": 0,
+  "created": "2023-02-13 05:00:20",
+  "expiration": null,
+  "subject": "the Ville:Moore family's house:main room:refrigerator",
+  "predicate": "is",
+  "object": "idle",
+  "description": "refrigerator is idle",
+  "embedding_key": "refrigerator is idle",
+  "poignancy": 1,
+  "keywords": [
+   "refrigerator",
+   "idle"
+  ],
+  "filling": []
+ },
+ "node_25": {
+  "node_count": 25,
+  "type_count": 23,
+  "type": "event",
+  "depth": 0,
+  "created": "2023-02-13 05:00:20",
+  "expiration": null,
+  "subject": "Jennifer Moore",
+  "predicate": "chat with",
+  "object": "Sam Moore",
+  "description": "Jennifer Moore is conversing about a couple, Sam and Jennifer Moore, discussing their plans for the day over breakfast and preparing Jennifer's favorite pancakes together.",
+  "embedding_key": "Jennifer Moore is conversing about a couple, Sam and Jennifer Moore, discussing their plans for the day over breakfast and preparing Jennifer's favorite pancakes together.",
+  "poignancy": 7,
+  "keywords": [
+   "Sam Moore",
+   "Jennifer Moore"
+  ],
+  "filling": []
+ },
+ "node_24": {
+  "node_count": 24,
+  "type_count": 22,
+  "type": "event",
+  "depth": 0,
+  "created": "2023-02-13 05:00:20",
+  "expiration": null,
+  "subject": "Sam Moore",
+  "predicate": "chat with",
+  "object": "Jennifer Moore",
+  "description": "Sam Moore is conversing about a couple, Sam and Jennifer Moore, discussing their plans for the day over breakfast and preparing Jennifer's favorite pancakes together.",
+  "embedding_key": "Sam Moore is conversing about a couple, Sam and Jennifer Moore, discussing their plans for the day over breakfast and preparing Jennifer's favorite pancakes together.",
+  "poignancy": 4,
+  "keywords": [
+   "Sam Moore",
+   "Jennifer Moore"
+  ],
+  "filling": [
+   "node_23"
+  ]
+ },
+ "node_23": {
+  "node_count": 23,
+  "type_count": 1,
+  "type": "chat",
+  "depth": 0,
+  "created": "2023-02-13 05:00:20",
+  "expiration": null,
+  "subject": "Sam Moore",
+  "predicate": "chat with",
+  "object": "Jennifer Moore",
+  "description": "conversing about a couple, Sam and Jennifer Moore, discussing their plans for the day over breakfast and preparing Jennifer's favorite pancakes together.",
+  "embedding_key": "conversing about a couple, Sam and Jennifer Moore, discussing their plans for the day over breakfast and preparing Jennifer's favorite pancakes together.",
+  "poignancy": 3,
+  "keywords": [
+   "Sam Moore",
+   "Jennifer Moore"
+  ],
+  "filling": [
+   [
+    "Sam Moore",
+    "Good morning, my dear. Did you sleep well?"
+   ],
+   [
+    "Jennifer Moore",
+    "Good morning, Sam. Yes, I had a restful night's sleep, thank you. How about you?"
+   ],
+   [
+    "Sam Moore",
+    "I slept like a log! Ready for another productive day ahead."
+   ],
+   [
+    "Jennifer Moore",
+    "I have a busy day planned today. I need to work on final preparations for the exhibition and mentor a young artist."
+   ],
+   [
+    "Sam Moore",
+    "That sounds exciting, dear. I'll make sure to help you out wherever I can. Remember, teamwork makes the dream work!"
+   ],
+   [
+    "Jennifer Moore",
+    "Thank you, Sam. Your support means the world to me. Let's make today a great one together."
+   ],
+   [
+    "Sam Moore",
+    "How about we have breakfast together before starting our day?"
+   ],
+   [
+    "Jennifer Moore",
+    "That sounds like a wonderful idea, Sam. I would love to have breakfast together before starting our day."
+   ],
+   [
+    "Sam Moore",
+    "Shall we discuss our plans for the day over breakfast?"
+   ],
+   [
+    "Jennifer Moore",
+    "Yes, let's discuss our plans for the day over breakfast."
+   ],
+   [
+    "Sam Moore",
+    "Shall we head to the kitchen and start preparing breakfast together?"
+   ],
+   [
+    "Jennifer Moore",
+    "Yes, let's head to the kitchen and start preparing breakfast together. I'll grab the ingredients while you set the table."
+   ],
+   [
+    "Sam Moore",
+    "Let's make some of your favorite pancakes for breakfast, Jennifer. I'll get started on the batter."
+   ],
+   [
+    "Jennifer Moore",
+    "I'll go get the ingredients and meet you in the kitchen, Sam."
+   ],
+   [
+    "Sam Moore",
+    "Great! I'll start preparing the batter for the pancakes. I'm looking forward to our breakfast together."
+   ],
+   [
+    "Jennifer Moore",
+    "Let me quickly freshen up and then I'll join you in the kitchen."
+   ]
+  ]
+ },
+ "node_22": {
+  "node_count": 22,
+  "type_count": 21,
+  "type": "event",
+  "depth": 0,
+  "created": "2023-02-13 05:00:20",
+  "expiration": null,
+  "subject": "the Ville:Moore family's house:main room:bed",
+  "predicate": "is",
+  "object": "idle",
+  "description": "bed is idle",
+  "embedding_key": "bed is idle",
+  "poignancy": 1,
+  "keywords": [
+   "idle",
+   "bed"
+  ],
+  "filling": []
+ },
+ "node_21": {
+  "node_count": 21,
+  "type_count": 20,
+  "type": "event",
+  "depth": 0,
+  "created": "2023-02-13 05:00:10",
+  "expiration": null,
+  "subject": "Jennifer Moore",
+  "predicate": "wake up",
+  "object": "stretch",
+  "description": "Jennifer Moore is waking up and stretching",
+  "embedding_key": "waking up and stretching",
+  "poignancy": 2,
+  "keywords": [
+   "stretch",
+   "Jennifer Moore"
+  ],
+  "filling": []
+ },
+ "node_20": {
+  "node_count": 20,
+  "type_count": 19,
+  "type": "event",
+  "depth": 0,
+  "created": "2023-02-13 05:00:10",
+  "expiration": null,
+  "subject": "the Ville:Moore family's house:main room:bed",
+  "predicate": "unmake",
+  "object": "",
+  "description": "bed is being unmade",
+  "embedding_key": "bed is being unmade",
+  "poignancy": 2,
+  "keywords": [
+   "",
+   "bed"
+  ],
+  "filling": []
+ },
+ "node_19": {
+  "node_count": 19,
+  "type_count": 18,
+  "type": "event",
+  "depth": 0,
+  "created": "2023-02-13 05:00:10",
+  "expiration": null,
+  "subject": "Sam Moore",
+  "predicate": "wake up",
+  "object": "stretch",
+  "description": "Sam Moore is waking up and stretching in bed",
+  "embedding_key": "waking up and stretching in bed",
+  "poignancy": 3,
+  "keywords": [
+   "Sam Moore",
+   "stretch"
+  ],
+  "filling": []
+ },
+ "node_18": {
+  "node_count": 18,
+  "type_count": 17,
+  "type": "event",
+  "depth": 0,
+  "created": "2023-02-13 05:00:10",
+  "expiration": null,
+  "subject": "the Ville:Moore family's house:main room:bed",
+  "predicate": "use",
+  "object": "being",
+  "description": "bed is being used",
+  "embedding_key": "bed is being used",
+  "poignancy": 3,
+  "keywords": [
+   "being",
+   "bed"
+  ],
+  "filling": []
+ },
+ "node_17": {
+  "node_count": 17,
+  "type_count": 16,
+  "type": "event",
+  "depth": 0,
+  "created": "2023-02-13 00:00:10",
+  "expiration": null,
+  "subject": "the Ville:Moore family's house:main room:closet",
+  "predicate": "is",
+  "object": "idle",
+  "description": "closet is idle",
+  "embedding_key": "closet is idle",
+  "poignancy": 1,
+  "keywords": [
+   "closet",
+   "idle"
+  ],
+  "filling": []
+ },
+ "node_16": {
+  "node_count": 16,
+  "type_count": 15,
+  "type": "event",
+  "depth": 0,
+  "created": "2023-02-13 00:00:10",
+  "expiration": null,
+  "subject": "the Ville:Moore family's house:main room:kitchen sink",
+  "predicate": "is",
+  "object": "idle",
+  "description": "kitchen sink is idle",
+  "embedding_key": "kitchen sink is idle",
+  "poignancy": 1,
+  "keywords": [
+   "kitchen sink",
+   "idle"
+  ],
+  "filling": []
+ },
+ "node_15": {
+  "node_count": 15,
+  "type_count": 14,
+  "type": "event",
+  "depth": 0,
+  "created": "2023-02-13 00:00:10",
+  "expiration": null,
+  "subject": "the Ville:Moore family's house:main room:desk",
+  "predicate": "is",
+  "object": "idle",
+  "description": "desk is idle",
+  "embedding_key": "desk is idle",
+  "poignancy": 1,
+  "keywords": [
+   "desk",
+   "idle"
+  ],
+  "filling": []
+ },
+ "node_14": {
+  "node_count": 14,
+  "type_count": 13,
+  "type": "event",
+  "depth": 0,
+  "created": "2023-02-13 00:00:10",
+  "expiration": null,
+  "subject": "the Ville:Moore family's house:main room:refrigerator",
+  "predicate": "is",
+  "object": "idle",
+  "description": "refrigerator is idle",
+  "embedding_key": "refrigerator is idle",
+  "poignancy": 1,
+  "keywords": [
+   "refrigerator",
+   "idle"
+  ],
+  "filling": []
+ },
+ "node_13": {
+  "node_count": 13,
+  "type_count": 12,
+  "type": "event",
+  "depth": 0,
+  "created": "2023-02-13 00:00:10",
+  "expiration": null,
+  "subject": "Jennifer Moore",
+  "predicate": "sleep",
+  "object": "",
+  "description": "Jennifer Moore is sleeping",
+  "embedding_key": "Jennifer Moore is sleeping",
+  "poignancy": 2,
+  "keywords": [
+   "",
+   "Jennifer Moore"
+  ],
+  "filling": []
+ },
+ "node_12": {
+  "node_count": 12,
+  "type_count": 11,
+  "type": "event",
+  "depth": 0,
+  "created": "2023-02-13 00:00:10",
+  "expiration": null,
+  "subject": "the Ville:Moore family's house:main room:bed",
+  "predicate": "lay",
+  "object": "on",
+  "description": "bed is being laid on",
+  "embedding_key": "bed is being laid on",
+  "poignancy": 2,
+  "keywords": [
+   "bed",
+   "on"
+  ],
+  "filling": []
+ },
+ "node_11": {
+  "node_count": 11,
+  "type_count": 10,
+  "type": "event",
+  "depth": 0,
+  "created": "2023-02-13 00:00:10",
+  "expiration": null,
+  "subject": "the Ville:Moore family's house:main room:bed",
+  "predicate": "occupy",
+  "object": "None",
+  "description": "bed is occupied",
+  "embedding_key": "bed is occupied",
+  "poignancy": 4,
+  "keywords": [
+   "None",
+   "bed"
+  ],
+  "filling": []
+ },
+ "node_10": {
+  "node_count": 10,
+  "type_count": 9,
+  "type": "event",
+  "depth": 0,
+  "created": "2023-02-13 00:00:10",
+  "expiration": null,
+  "subject": "Sam Moore",
+  "predicate": "sleep",
+  "object": "",
+  "description": "Sam Moore is sleeping",
+  "embedding_key": "Sam Moore is sleeping",
+  "poignancy": 1,
+  "keywords": [
+   "",
+   "Sam Moore"
+  ],
+  "filling": []
+ },
+ "node_9": {
+  "node_count": 9,
+  "type_count": 1,
+  "type": "thought",
+  "depth": 1,
+  "created": "2023-02-13 00:00:00",
+  "expiration": "2023-03-15 00:00:00",
+  "subject": "Sam Moore",
+  "predicate": "plan",
+  "object": "Monday February 13",
+  "description": "This is Sam Moore's plan for Monday February 13: wake up and complete the morning routine at 5:00 am, take a walk around Johnson Park at 6:00 am, have breakfast with Jennifer at 7:30 am, tend to the park until 12:00 pm, have lunch at Hobbs caf\u00e9 at 12:30 pm, spend the afternoon reading at the local library from 1:30 pm to 4:00 pm, have an early dinner at 5:00 pm, talk to his neighbors about running for mayor in the upcoming election at 6:30 pm.",
+  "embedding_key": "This is Sam Moore's plan for Monday February 13: wake up and complete the morning routine at 5:00 am, take a walk around Johnson Park at 6:00 am, have breakfast with Jennifer at 7:30 am, tend to the park until 12:00 pm, have lunch at Hobbs caf\u00e9 at 12:30 pm, spend the afternoon reading at the local library from 1:30 pm to 4:00 pm, have an early dinner at 5:00 pm, talk to his neighbors about running for mayor in the upcoming election at 6:30 pm.",
+  "poignancy": 5,
+  "keywords": [
+   "plan"
+  ],
+  "filling": null
+ },
+ "node_8": {
+  "node_count": 8,
+  "type_count": 8,
+  "type": "event",
+  "depth": 0,
+  "created": "2023-02-13 00:00:00",
+  "expiration": null,
+  "subject": "the Ville:Moore family's house:main room:cooking area",
+  "predicate": "is",
+  "object": "idle",
+  "description": "cooking area is idle",
+  "embedding_key": "cooking area is idle",
+  "poignancy": 1,
+  "keywords": [
+   "cooking area",
+   "idle"
+  ],
+  "filling": []
+ },
+ "node_7": {
+  "node_count": 7,
+  "type_count": 7,
+  "type": "event",
+  "depth": 0,
+  "created": "2023-02-13 00:00:00",
+  "expiration": null,
+  "subject": "the Ville:Moore family's house:main room:closet",
+  "predicate": "is",
+  "object": "idle",
+  "description": "closet is idle",
+  "embedding_key": "closet is idle",
+  "poignancy": 1,
+  "keywords": [
+   "closet",
+   "idle"
+  ],
+  "filling": []
+ },
+ "node_6": {
+  "node_count": 6,
+  "type_count": 6,
+  "type": "event",
+  "depth": 0,
+  "created": "2023-02-13 00:00:00",
+  "expiration": null,
+  "subject": "the Ville:Moore family's house:main room:kitchen sink",
+  "predicate": "is",
+  "object": "idle",
+  "description": "kitchen sink is idle",
+  "embedding_key": "kitchen sink is idle",
+  "poignancy": 1,
+  "keywords": [
+   "kitchen sink",
+   "idle"
+  ],
+  "filling": []
+ },
+ "node_5": {
+  "node_count": 5,
+  "type_count": 5,
+  "type": "event",
+  "depth": 0,
+  "created": "2023-02-13 00:00:00",
+  "expiration": null,
+  "subject": "the Ville:Moore family's house:main room:desk",
+  "predicate": "is",
+  "object": "idle",
+  "description": "desk is idle",
+  "embedding_key": "desk is idle",
+  "poignancy": 1,
+  "keywords": [
+   "desk",
+   "idle"
+  ],
+  "filling": []
+ },
+ "node_4": {
+  "node_count": 4,
+  "type_count": 4,
+  "type": "event",
+  "depth": 0,
+  "created": "2023-02-13 00:00:00",
+  "expiration": null,
+  "subject": "the Ville:Moore family's house:main room:refrigerator",
+  "predicate": "is",
+  "object": "idle",
+  "description": "refrigerator is idle",
+  "embedding_key": "refrigerator is idle",
+  "poignancy": 1,
+  "keywords": [
+   "refrigerator",
+   "idle"
+  ],
+  "filling": []
+ },
+ "node_3": {
+  "node_count": 3,
+  "type_count": 3,
+  "type": "event",
+  "depth": 0,
+  "created": "2023-02-13 00:00:00",
+  "expiration": null,
+  "subject": "Jennifer Moore",
+  "predicate": "is",
+  "object": "idle",
+  "description": "Jennifer Moore is idle",
+  "embedding_key": "Jennifer Moore is idle",
+  "poignancy": 1,
+  "keywords": [
+   "idle",
+   "Jennifer Moore"
+  ],
+  "filling": []
+ },
+ "node_2": {
+  "node_count": 2,
+  "type_count": 2,
+  "type": "event",
+  "depth": 0,
+  "created": "2023-02-13 00:00:00",
+  "expiration": null,
+  "subject": "Sam Moore",
+  "predicate": "is",
+  "object": "idle",
+  "description": "Sam Moore is idle",
+  "embedding_key": "Sam Moore is idle",
+  "poignancy": 1,
+  "keywords": [
+   "Sam Moore",
+   "idle"
+  ],
+  "filling": []
+ },
+ "node_1": {
+  "node_count": 1,
+  "type_count": 1,
+  "type": "event",
+  "depth": 0,
+  "created": "2023-02-13 00:00:00",
+  "expiration": null,
+  "subject": "the Ville:Moore family's house:main room:bed",
+  "predicate": "is",
+  "object": "idle",
+  "description": "bed is idle",
+  "embedding_key": "bed is idle",
+  "poignancy": 1,
+  "keywords": [
+   "idle",
+   "bed"
+  ],
+  "filling": []
+ }
+}
