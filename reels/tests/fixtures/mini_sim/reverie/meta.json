@@ -1,0 +1,13 @@
+{
+  "fork_sim_code": "skip-morning-s-13",
+  "start_date": "February 13, 2023",
+  "curr_time": "February 13, 2023, 08:22:20",
+  "sec_per_step": 10,
+  "maze_name": "the_ville",
+  "persona_names": [
+    "Sam Moore",
+    "Jennifer Moore",
+    "Isabella Rodriguez"
+  ],
+  "step": 3000
+}

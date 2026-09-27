@@ -1,0 +1,74 @@
+:root {
+  --bg: #11151c;
+  --panel: #f6f3ec;
+  --ink: #1d2230;
+  --muted: #6b7080;
+  --bubble: #ffffff;
+  --focal: #2f6fde;
+  --thought: #ece6f7;
+  --thought-ink: #4a3a6b;
+}
+* { box-sizing: border-box; }
+html, body { margin: 0; background: var(--bg); color: var(--ink); font-family: "Segoe UI", system-ui, sans-serif; }
+
+#stage {
+  position: relative;
+  width: 1600px;
+  height: 900px;
+  display: flex;
+  overflow: hidden;
+  background: #000;
+}
+#map { width: 1100px; height: 900px; }
+#map canvas { display: block; }
+#fade {
+  position: absolute; left: 0; top: 0; width: 100%; height: 100%;
+  background: #000; opacity: 0; pointer-events: none; z-index: 5;
+}
+
+#panel {
+  width: 500px; height: 900px;
+  background: var(--panel);
+  display: flex; flex-direction: column;
+  border-left: 3px solid #d9d2c3;
+}
+#panel-head { padding: 18px 22px 12px; border-bottom: 1px solid #e0d9ca; }
+#clock { font-size: 28px; font-weight: 700; letter-spacing: 0.5px; }
+#scene { font-size: 16px; color: var(--muted); margin-top: 4px; }
+#messages {
+  flex: 1; overflow: hidden;
+  display: flex; flex-direction: column; justify-content: flex-end;
+  padding: 12px 18px 22px; gap: 12px;
+}
+
+.msg { display: flex; gap: 10px; align-items: flex-start; }
+.msg .who { flex: 0 0 52px; display: flex; flex-direction: column; align-items: center; }
+.msg .who img { width: 44px; height: 44px; image-rendering: pixelated; background: #e6e0d3; border-radius: 8px; }
+.msg .who span { font-size: 13px; font-weight: 700; color: var(--muted); margin-top: 2px; }
+.msg .body {
+  background: var(--bubble); border-radius: 12px; padding: 10px 14px;
+  font-size: 22px; line-height: 1.35; box-shadow: 0 1px 2px rgba(0,0,0,0.12);
+  max-width: 400px;
+}
+.msg .name { font-size: 14px; font-weight: 700; color: var(--muted); margin-bottom: 2px; }
+.msg.focal .name { color: var(--focal); }
+.msg.thought .body { background: var(--thought); color: var(--thought-ink); font-style: italic; border-radius: 20px; }
+.msg.thought .name::after { content: " · thinking"; font-weight: 400; }
+.msg.placeholder .body { opacity: 0.5; }
+.msg.old { opacity: 0.55; }
+.caret { display: inline-block; width: 2px; height: 1em; background: currentColor; vertical-align: -0.15em; margin-left: 2px; }
+
+#debug {
+  position: absolute; left: 8px; top: 8px; z-index: 6;
+  background: rgba(0,0,0,0.7); color: #9f9; font: 13px/1.4 monospace;
+  padding: 6px 10px; border-radius: 4px; white-space: pre;
+}
+
+#controls {
+  width: 1600px; display: flex; gap: 12px; align-items: center;
+  padding: 10px 12px; color: #ddd; font-size: 14px;
+}
+#controls button, #controls select { font-size: 14px; }
+#scrub { flex: 1; }
+#segs button { margin-right: 4px; }
+body.capture #controls { display: none; }

@@ -1,0 +1,10 @@
+# Sam Moore's morning in skip-morning-s-14: breakfast chat with Jennifer, the
+# walk home from Johnson Park, and meeting Ayesha Khan in the park.
+sim: skip-morning-s-14
+persona: Sam Moore
+segments:
+  - {name: breakfast-chat, steps: [1790, 1900]}
+  - {name: walk-home, steps: [2470, 2560]}
+  - {name: park-meeting, nodes: [node_303, node_308], pad_steps: 15}
+prompts: {monologue: monologue/v1}
+voices: {Sam Moore: Dennis, Jennifer Moore: Sarah, Ayesha Khan: Ashley}

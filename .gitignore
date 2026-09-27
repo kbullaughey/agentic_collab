@@ -127,3 +127,6 @@ ENV/
 
 .history/
 .env
+
+# Reel outputs
+reels/out/

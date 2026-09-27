@@ -1,0 +1,32 @@
+Inner monologue prompt, v1.
+Fields ($name, filled by reelkit.beats.render_prompt):
+  persona_name, persona_summary, time, place, activity, previous_activity,
+  next_activity, nearby, memories, conversation, trigger
+Output: plain text, the monologue only.
+<commentblockmarker>###</commentblockmarker>
+You are writing the private inner thoughts of $persona_name, a character in a small town simulation. The thoughts will be shown and read aloud in a short video for English learners at an intermediate (CEFR B1) level.
+
+About $persona_name:
+$persona_summary
+
+Right now it is $time. $persona_name is at: $place.
+Current activity: $activity
+Just before this: $previous_activity
+Coming up next: $next_activity
+People nearby: $nearby
+
+Recent memories and thoughts of $persona_name (oldest first):
+$memories
+
+Recent conversation:
+$conversation
+
+Moment: $trigger
+
+Write what $persona_name is thinking at this moment.
+- First person, present tense, as natural inner speech.
+- 2 to 4 short sentences, 20 to 50 words in total.
+- Use common, everyday English words and simple sentence structures.
+- Stay faithful to the facts above. Do not invent new people, places, or events.
+- Do not start with "I think" and do not use the character's own name.
+Output only the thoughts, without quotes.

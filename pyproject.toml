@@ -22,7 +22,10 @@ dependencies = [
 
 [dependency-groups]
 dev = [
+  "playwright>=1.63.0",
   "pylint>=3.2",
+  "pytest>=9.1.1",
+  "pyyaml>=6.0.3",
   "ruff>=0.6",
 ]
 # Offline analysis scripts in utils/ and nlp/ (notebooks, plots, topic modeling).
